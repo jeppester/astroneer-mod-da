@@ -1,0 +1,9 @@
+build
+mod-output
+
+# Generated from the game's own files by tools/setup.sh — never distributed.
+source-locres
+source-assets
+translation/Game_da.po
+translation/Game_da.mo
+tools/__pycache__
