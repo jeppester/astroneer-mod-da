@@ -10665,7 +10665,7 @@ msgstr "Tilkoblet Landingspladser og Astroneer-rygsække. Holder styr på missio
 
 msgctxt "GameMenu,Astropedia_MissionRewards"
 msgid ""
-msgstr ""
+msgstr "BELØNNINGER"
 
 msgctxt "GameMenu,Astropedia_MissionRewards_Description"
 msgid ""
@@ -10733,11 +10733,11 @@ msgstr "SPORSTOLPER"
 
 msgctxt "GameMenu,Astropedia_Rails_Name_Item2"
 msgid ""
-msgstr ""
+msgstr "SKINNEFARTØJER"
 
 msgctxt "GameMenu,Astropedia_Rails_Name_Item3"
 msgid ""
-msgstr ""
+msgstr "KØRSEL PÅ SKINNER"
 
 msgctxt "GameMenu,Astropedia_Rails_Name_Item4"
 msgid ""
@@ -10781,7 +10781,7 @@ msgstr "FORSKNINGSPLATFORM"
 
 msgctxt "GameMenu,Astropedia_Respawning"
 msgid ""
-msgstr ""
+msgstr "VENDER TILBAGE TIL BASEN"
 
 msgctxt "GameMenu,Astropedia_Respawning_Description"
 msgid ""
@@ -10933,7 +10933,7 @@ msgstr ""
 
 msgctxt "GameMenu,ControlsBinding_Right"
 msgid ""
-msgstr ""
+msgstr "HØJRE"
 
 msgctxt "GameMenu,ControlsBinding_Sprint"
 msgid ""
@@ -10969,11 +10969,11 @@ msgstr ""
 
 msgctxt "GameMenu,ControlsBinding_VehicleForward"
 msgid ""
-msgstr ""
+msgstr "RUMBIL FREMAD"
 
 msgctxt "GameMenu,ControlsBinding_VehicleReverse"
 msgid ""
-msgstr ""
+msgstr "RUMBIL BAK"
 
 msgctxt "GameMenu,ControlsBinding_Wave"
 msgid ""
@@ -11425,7 +11425,7 @@ msgstr "TRYK"
 
 msgctxt "GameMenu,GeneralOption_Recall"
 msgid ""
-msgstr ""
+msgstr "TILKALD"
 
 msgctxt "GameMenu,GeneralOption_Rename"
 msgid ""
@@ -11569,7 +11569,7 @@ msgstr "AFSLUT"
 
 msgctxt "GameMenu,MenuEntry_RedeemCode"
 msgid ""
-msgstr ""
+msgstr "INDLØS KODE"
 
 msgctxt "GameMenu,MenuEntry_SaveGame"
 msgid ""
@@ -12012,7 +12012,7 @@ msgstr "MULTIPLAYER"
 
 msgctxt "GameMenu,Section_MultiplayerMode_FindGames"
 msgid ""
-msgstr ""
+msgstr "GENOPFRISK"
 
 msgctxt "GameMenu,Section_MultiplayerMode_JoinGame"
 msgid ""
@@ -12060,7 +12060,7 @@ msgstr "HURTIGHJÆLP"
 
 msgctxt "GameMenu,Section_ResetAllUnlocks"
 msgid ""
-msgstr ""
+msgstr "Nulstil Oplåste Genstande"
 
 msgctxt "GameMenu,Section_SavedGames"
 msgid ""
@@ -12088,7 +12088,7 @@ msgstr "FORBINDELSE AFBRUDT"
 
 msgctxt "GameMenu,Section_SwitchReconnect"
 msgid ""
-msgstr ""
+msgstr "FORBIND IGEN"
 
 msgctxt "GameMenu,Section_SwitchReconnectMsg"
 msgid ""
@@ -12200,7 +12200,7 @@ msgstr ""
 
 msgctxt "GameMenu,Warning_LowSaveStorageSpace"
 msgid ""
-msgstr ""
+msgstr "LØBER TØR FOR PLADS TIL GEMTE SPIL!"
 
 msgctxt "GameMenu,WindowMode_Fullscreen"
 msgid ""
