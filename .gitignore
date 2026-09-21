@@ -1,9 +1,11 @@
 build
 mod-output
 
-# Generated from the game's own files by tools/setup.sh — never distributed.
-source-locres
-source-assets
-translation/Game_da.po
-translation/Game_da.mo
-tools/__pycache__
+# Where tools/gamefinder.py found the game — machine-specific.
+.astroneer-dir
+
+# The working PO regenerated from the game's own files on every dev.py start,
+# plus whatever your PO editor compiles next to it. Never distributed.
+workdir/*
+!workdir/README.md
+__pycache__/
