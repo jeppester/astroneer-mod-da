@@ -10749,7 +10749,7 @@ msgstr "TOGSTATIONER"
 
 msgctxt "GameMenu,Astropedia_Rails_Name_Item6"
 msgid ""
-msgstr ""
+msgstr "TOGBANEAUTOMATISERING"
 
 msgctxt "GameMenu,Astropedia_Rails_Title1"
 msgid ""
@@ -10789,7 +10789,7 @@ msgstr "Hvis du tager for meget skade uden at hele, vil du genopstå ved nærmes
 
 msgctxt "GameMenu,Astropedia_Sensors"
 msgid ""
-msgstr ""
+msgstr "SENSORER"
 
 msgctxt "GameMenu,Astropedia_Sensors_Description"
 msgid ""
@@ -10797,7 +10797,7 @@ msgstr ""
 
 msgctxt "GameMenu,Astropedia_Shredders"
 msgid ""
-msgstr ""
+msgstr "NEDDELERE"
 
 msgctxt "GameMenu,Astropedia_Shredders_Description"
 msgid ""
@@ -11025,7 +11025,7 @@ msgstr "MUSESENSITIVITET"
 
 msgctxt "GameMenu,ControlsOption_SelectionWheelToggle"
 msgid ""
-msgstr ""
+msgstr "MENUHJUL KRÆVER AT TAST HOLDES NEDE"
 
 msgctxt "GameMenu,ControlsOption_ToggleGamepadAudio"
 msgid ""
@@ -11149,11 +11149,11 @@ msgstr "LYS VED PEGEMARKØR"
 
 msgctxt "GameMenu,CreativeModeOptions_ShowDroneUI"
 msgid ""
-msgstr ""
+msgstr "VIS DRONEBRUGERFLADE"
 
 msgctxt "GameMenu,CreativeModeOptions_ShowLODAnchors"
 msgid ""
-msgstr ""
+msgstr "VIS TERRÆNANKERSTATUS"
 
 msgctxt "GameMenu,CreativeModeOptions_SolarTimeMultiplier"
 msgid ""
@@ -11209,7 +11209,7 @@ msgstr "OVERSKRIV"
 
 msgctxt "GameMenu,Customization_SaveOutfit"
 msgid ""
-msgstr ""
+msgstr "GEM NYT UDSEENDE"
 
 msgctxt "GameMenu,Customization_UnlockedByAchievementTooltip"
 msgid ""
@@ -11433,7 +11433,7 @@ msgstr "OMDØB"
 
 msgctxt "GameMenu,GeneralOption_SaveAsCopy"
 msgid ""
-msgstr ""
+msgstr "GEM SOM KOPI"
 
 msgctxt "GameMenu,GeneralOption_TrimSaveHistory"
 msgid ""
@@ -11477,7 +11477,7 @@ msgstr "POST-PROCESSERINGS-KVALITET"
 
 msgctxt "GameMenu,Graphics_ShadowQuality"
 msgid ""
-msgstr ""
+msgstr "SKYGGEKVALITET"
 
 msgctxt "GameMenu,HQMode_Disclaimer"
 msgid ""
@@ -11517,7 +11517,7 @@ msgstr "NULSTIL"
 
 msgctxt "GameMenu,HQMode_ShadowAndLightingDetail"
 msgid ""
-msgstr ""
+msgstr "LYS OG SKYGGER"
 
 msgctxt "GameMenu,HQMode_TerrainLODBlending"
 msgid ""
@@ -11573,11 +11573,11 @@ msgstr "INDLØS KODE"
 
 msgctxt "GameMenu,MenuEntry_SaveGame"
 msgid ""
-msgstr ""
+msgstr "GEM SPIL"
 
 msgctxt "GameMenu,MenuEntry_Shop"
 msgid ""
-msgstr ""
+msgstr "BUTIK"
 
 msgctxt "GameMenu,MenuEntry_StartANewAdventureGame"
 msgid ""
@@ -11740,7 +11740,7 @@ msgstr ""
 
 msgctxt "GameMenu,Options_VersionNumber"
 msgid ""
-msgstr ""
+msgstr "SOFTWARE VERSION"
 
 msgctxt "GameMenu,PS4_PS5_SaveUpgrade"
 msgid ""
@@ -11783,7 +11783,7 @@ msgstr "ER DU SIKKER?"
 
 msgctxt "GameMenu,Popout_DestructiveSettings_TimerMessage"
 msgid ""
-msgstr ""
+msgstr "INDSTILLINGER ÆNDRES TILBAGE OM: "
 
 msgctxt "GameMenu,Popout_DestructiveSettings_Title"
 msgid ""
@@ -11834,6 +11834,10 @@ msgstr "RETURNÉR TIL STARTBASE UDEN DIT UDSTYR? DENNE HANDLING KAN IKKE OMGØRE
 msgctxt "GameMenu,Popout_SaveSpaceStorageWarning"
 msgid ""
 msgstr ""
+"KUNNE IKKE GEMME SPIL: '{0}' ER FOR STOR TIL AT GEMME. FILSTØRRELSEN ER {1}. \n"
+"BRUG 'SPIL ALENE'-SEKTIONEN I SPILMENUEN FOR AT SLETTE GEMTE SPIL OG FRIGØRE PLADS.\n"
+"\n"
+"ØNSKER DU AFSLUTTE UDEN AT GEMME?"
 
 msgctxt "GameMenu,Popout_SavedGame_Delete"
 msgid ""
@@ -12068,15 +12072,15 @@ msgstr "GEMTE SPIL"
 
 msgctxt "GameMenu,Section_Servers"
 msgid ""
-msgstr ""
+msgstr "SERVERE"
 
 msgctxt "GameMenu,Section_ServersSoon"
 msgid ""
-msgstr ""
+msgstr "SERVERE (KOMMER SNART!)"
 
 msgctxt "GameMenu,Section_ShareGame"
 msgid ""
-msgstr ""
+msgstr "DEL SPIL"
 
 msgctxt "GameMenu,Section_Suit"
 msgid ""
@@ -12108,7 +12112,7 @@ msgstr "INGEN"
 
 msgctxt "GameMenu,SettingSection_Experimental_SaveFileRepair"
 msgid ""
-msgstr ""
+msgstr "REPARATION AF GEMT SPIL  [EKSPERIMENTAL]"
 
 msgctxt "GameMenu,Solo_RenameSavePrompt"
 msgid ""
@@ -23818,7 +23822,7 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Description_Arctichoke"
 msgid ""
-msgstr ""
+msgstr "Denne art beholder sine gamle blade for at holde på næring og isolere sig mod kulden. Hjembragt til Jorden, som afgrøde i subpolare egne.  "
 
 msgctxt "U36_Items,Item_Description_Bubbulb"
 msgid ""
@@ -23846,7 +23850,7 @@ msgstr "Dekorativ Genstand. Til at tælle med."
 
 msgctxt "U36_Items,Item_Description_Dewtrunk"
 msgid ""
-msgstr ""
+msgstr "Planten er uspiselig, men producerer en unik \"dug\" der bruges af EXO Dynamik som en alsidig og bionedbrydelig maskinolie."
 
 msgctxt "U36_Items,Item_Description_DiscoBall"
 msgid ""
@@ -23882,7 +23886,7 @@ msgstr "Kan høstes. Høst planten mens den er moden."
 
 msgctxt "U36_Items,Item_Description_HelmetLavalamp"
 msgid ""
-msgstr ""
+msgstr "Når kunst og håndværk kommer går for langt og ubrugte hjelme ligger og flyder. Kan skifte farver og effekter for at opnå et ekstra hipt resultat."
 
 msgctxt "U36_Items,Item_Description_Hornstalk"
 msgid ""
@@ -24002,11 +24006,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_AllCaps_Arctichoke"
 msgid ""
-msgstr ""
+msgstr "ARKTISKOK"
 
 msgctxt "U36_Items,Item_Name_AllCaps_ArctichokeSeed"
 msgid ""
-msgstr ""
+msgstr "ARKTISKOKFRØ"
 
 msgctxt "U36_Items,Item_Name_AllCaps_Bubbulb"
 msgid ""
@@ -24038,11 +24042,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_AllCaps_Dewtrunk"
 msgid ""
-msgstr ""
+msgstr "DUGSTOK"
 
 msgctxt "U36_Items,Item_Name_AllCaps_DewtrunkSeed"
 msgid ""
-msgstr ""
+msgstr "DUGSTOKFRØ"
 
 msgctxt "U36_Items,Item_Name_AllCaps_DiscoBall"
 msgid ""
@@ -24086,15 +24090,15 @@ msgstr "STOR BEHOLDER INGREDIENSSOKKEL"
 
 msgctxt "U36_Items,Item_Name_AllCaps_LargeFluidSoilCanister"
 msgid ""
-msgstr ""
+msgstr "STOR VÆSKE- & JORDBEHOLDER "
 
 msgctxt "U36_Items,Item_Name_AllCaps_LargeGasCanister"
 msgid ""
-msgstr ""
+msgstr "STOR GASBEHOLDER "
 
 msgctxt "U36_Items,Item_Name_AllCaps_LavaLamp"
 msgid ""
-msgstr ""
+msgstr "LAVALAMPE "
 
 msgctxt "U36_Items,Item_Name_AllCaps_MediumCanisterResourcePlinth"
 msgid ""
@@ -24102,11 +24106,11 @@ msgstr "MELLEMSTOR BEHOLDER INGREDIENSSOKKEL"
 
 msgctxt "U36_Items,Item_Name_AllCaps_MegaArctichoke"
 msgid ""
-msgstr ""
+msgstr "MEGA-ARKTISKOK"
 
 msgctxt "U36_Items,Item_Name_AllCaps_MegaArctichokeSeed"
 msgid ""
-msgstr ""
+msgstr "MEGA-ARKTISKOKFRØ"
 
 msgctxt "U36_Items,Item_Name_AllCaps_MegaBubbulb"
 msgid ""
@@ -24126,11 +24130,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_AllCaps_MegaDewtrunk"
 msgid ""
-msgstr ""
+msgstr "MEGA-DUGSTOK"
 
 msgctxt "U36_Items,Item_Name_AllCaps_MegaDewtrunkSeed"
 msgid ""
-msgstr ""
+msgstr "MEGA-DUGSTOKFRØ"
 
 msgctxt "U36_Items,Item_Name_AllCaps_MegaFinwheel"
 msgid ""
@@ -24238,7 +24242,7 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_AllCaps_Walkway"
 msgid ""
-msgstr ""
+msgstr "FORTOV"
 
 msgctxt "U36_Items,Item_Name_Allcaps_ShinyAstroStatue"
 msgid ""
@@ -24250,11 +24254,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_Arctichoke"
 msgid ""
-msgstr ""
+msgstr "Arktiskok"
 
 msgctxt "U36_Items,Item_Name_ArctichokeSeed"
 msgid ""
-msgstr ""
+msgstr "Arktiskokfrø"
 
 msgctxt "U36_Items,Item_Name_Bubbulb"
 msgid ""
@@ -24286,11 +24290,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_Dewtrunk"
 msgid ""
-msgstr ""
+msgstr "Dugstok"
 
 msgctxt "U36_Items,Item_Name_DewtrunkSeed"
 msgid ""
-msgstr ""
+msgstr "Dugstokfrø"
 
 msgctxt "U36_Items,Item_Name_DiscoBall"
 msgid ""
@@ -24334,15 +24338,15 @@ msgstr "Stor Beholder Ingredienssokkel"
 
 msgctxt "U36_Items,Item_Name_LargeFluidSoilCanister"
 msgid ""
-msgstr ""
+msgstr "Stor Væske- & Jordbeholder"
 
 msgctxt "U36_Items,Item_Name_LargeGasCanister"
 msgid ""
-msgstr ""
+msgstr "Stor Gasbeholder"
 
 msgctxt "U36_Items,Item_Name_LavaLamp"
 msgid ""
-msgstr ""
+msgstr "Lavalampe"
 
 msgctxt "U36_Items,Item_Name_MediumCanisterResourcePlinth"
 msgid ""
@@ -24350,11 +24354,11 @@ msgstr "Mellemstor Beholder Ingredienssokkel"
 
 msgctxt "U36_Items,Item_Name_MegaArctichoke"
 msgid ""
-msgstr ""
+msgstr "Mega-Arktiskok"
 
 msgctxt "U36_Items,Item_Name_MegaArctichokeSeed"
 msgid ""
-msgstr ""
+msgstr "Mega-Arktiskokfrø"
 
 msgctxt "U36_Items,Item_Name_MegaBubbulb"
 msgid ""
@@ -24374,11 +24378,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_MegaDewtrunk"
 msgid ""
-msgstr ""
+msgstr "Mega-Dugstok"
 
 msgctxt "U36_Items,Item_Name_MegaDewtrunkSeed"
 msgid ""
-msgstr ""
+msgstr "Mega-Dugstokfrø"
 
 msgctxt "U36_Items,Item_Name_MegaFinwheel"
 msgid ""
@@ -24510,11 +24514,11 @@ msgstr ""
 
 msgctxt "U36_Items,Item_Name_Walkway"
 msgid ""
-msgstr ""
+msgstr "Fortov"
 
 msgctxt "U36_Items,Item_Name_WalkwayBundle"
 msgid ""
-msgstr ""
+msgstr "Fortovspakke"
 
 msgctxt "U36_Items,Item_SubtitleGenericPlantStateDead"
 msgid ""
@@ -24542,7 +24546,7 @@ msgstr ""
 
 msgctxt "U36_Items,Itend_Name_AllCaps_WalkwayBundle"
 msgid ""
-msgstr ""
+msgstr "FORTOVSPAKKE"
 
 msgctxt "U36_LogData,LogData_Description_ResearchFiles1"
 msgid ""
@@ -24555,6 +24559,11 @@ msgstr ""
 msgctxt "U36_LogData,LogData_Description_ResearchFiles3"
 msgid ""
 msgstr ""
+"Fremgangen er aftaget på det seneste, og moralen er udfordret af tilbagefald. Det er en brutal process at tvinge en planet til at leve op til vores krav, og de dertil krævede Megabygninger tager evigheder at designe. Så er der Vastars konverteringsstorme....modbydelige sager. Det er en skam at Instituttet ikke blev bygget på en mere beboelig planet, men det er nu den mest ideelle løsning at starte med en død verden. Hvis vi kan få Megabygningerne til at virke under de mest udfordrende forhold, vil vi kunne tilpasse dem til lettere omstændigheder.  Hellere det end at vi ødelægger naturen på en fungerende verden for at få afhøvlet knasterne.  \n"
+"\n"
+"Trods alt er vores planteindsats i Biodome 4 endelig ved at slå rødder, og om et år eller to vil vi begynde at se stabile rekordafgrøder! \n"
+"\n"
+"Ja. Bare et år eller to mere. Almas arbejde skal videreføres. "
 
 msgctxt "U36_LogData,LogData_Description_ResearchFiles4"
 msgid ""
@@ -24578,7 +24587,7 @@ msgstr ""
 
 msgctxt "U36_LogData,LogData_TitleResearchFiles3"
 msgid ""
-msgstr ""
+msgstr "Nyt Liv og Gamle Drømme"
 
 msgctxt "U36_LogData,LogData_TitleResearchFiles4"
 msgid ""
