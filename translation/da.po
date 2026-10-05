@@ -1497,7 +1497,7 @@ msgstr "Trailer_Exotic_BuddyJump_Shot01_Take02"
 
 msgctxt ",7047A7EB4D3031BAC436F79C08369013"
 msgid ""
-msgstr ""
+msgstr "Gamepad"
 
 msgctxt ",7083BAF642A94F1623C4BF964B6BDAB2"
 msgid ""
@@ -1575,7 +1575,7 @@ msgstr "Test2"
 
 msgctxt ",75CABEB8499D9EF9C02F7AAF4D77DCCC"
 msgid ""
-msgstr ""
+msgstr "Lyd"
 
 msgctxt ",75D05F784D3E765DBBC11DBFCBC6E2B4"
 msgid ""
@@ -2194,7 +2194,7 @@ msgstr "種を介したアトロックス植物からバイオ燃料を精製：
 
 msgctxt ",A1C0E89B40C630F587AADC9CBE726292"
 msgid ""
-msgstr ""
+msgstr "Eksperimental"
 
 msgctxt ",A27B85D04628F60D64EE07AC9404A0C7"
 msgid ""
@@ -3181,7 +3181,7 @@ msgstr "Støvsky"
 
 msgctxt ",EB2D2FE8483D470116126F87225D4808"
 msgid ""
-msgstr ""
+msgstr "Generelt"
 
 msgctxt ",EB2DF0964E3E43931E2AAF8E2C4CD3C9"
 msgid ""
@@ -11904,7 +11904,7 @@ msgstr "GEM OG AFSLUT TIL HOVEDMENU"
 
 msgctxt "GameMenu,Section_Audio"
 msgid ""
-msgstr ""
+msgstr "LYD"
 
 msgctxt "GameMenu,Section_AutosaveTriggers"
 msgid ""
