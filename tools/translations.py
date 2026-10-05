@@ -25,6 +25,8 @@ original English msgid text, needed to translate in Poedit or any PO editor.
 It's gitignored and rebuilt from the game's own files on every start.
 """
 
+from dataclasses import dataclass
+
 import polib
 from pylocres import Entry, LocresFile, LocresVersion, Namespace
 
@@ -90,10 +92,38 @@ def compile_locres(po_path, out_path):
     return written, dropped
 
 
+@dataclass
+class Progress:
+    translated: int = 0         # entries
+    total: int = 0
+    translated_words: int = 0   # English words, counted in msgid
+    total_words: int = 0
+
+    @property
+    def percent(self):
+        """Share of the game's English words that have a translation.
+
+        Weighted by words rather than entries, so a one-word button label
+        doesn't count as much as a paragraph of tutorial text.
+        """
+        return self.translated_words / self.total_words * 100 if self.total_words else 0.0
+
+
 def progress(po_path):
-    """(translated, total) for a PO file."""
-    po = polib.pofile(str(po_path))
-    return sum(1 for e in po if e.msgstr.strip()), len(po)
+    """Progress for a PO file.
+
+    Words are counted in msgid, so this needs the working copy — the store has
+    no English text to count.
+    """
+    result = Progress()
+    for entry in polib.pofile(str(po_path)):
+        words = len(entry.msgid.split())
+        result.total += 1
+        result.total_words += words
+        if entry.msgstr.strip():
+            result.translated += 1
+            result.translated_words += words
+    return result
 
 
 def load_store(store_path):

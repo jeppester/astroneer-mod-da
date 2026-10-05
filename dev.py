@@ -107,8 +107,9 @@ def refresh_working_po(game):
         ok(f"flushed pending edits in {PO_FILE.name} into {STORE_FILE.name}")
     total = translations.working_po_from_locres(game.read(SOURCE_LOCRES), PO_FILE)
     _, orphans = translations.store_to_po(PO_FILE, STORE_FILE)
-    translated, _ = translations.progress(PO_FILE)
-    ok(f"{PO_FILE.name}: {translated}/{total} translated ({translated / total * 100:.1f}%)")
+    p = translations.progress(PO_FILE)
+    ok(f"{PO_FILE.name}: {p.translated}/{total} entries translated, "
+       f"{p.percent:.1f}% of words")
     if orphans:
         warn(f"{orphans} translation(s) in {STORE_FILE.name} have no matching string "
              "in the game any more (removed upstream?) — left as-is")
@@ -116,9 +117,10 @@ def refresh_working_po(game):
 
 def report(result, timestamp=False):
     stamp = f"{datetime.now():%H:%M:%S} " if timestamp else ""
-    pct = (result.translated / result.total * 100) if result.total else 0.0
-    ok(f"{stamp}built — {result.translated}/{result.total} entries translated ({pct:.1f}%), "
-       f"{result.total - result.translated} fall back to English")
+    p = result.progress
+    ok(f"{stamp}built — {p.translated}/{p.total} entries translated, "
+       f"{p.percent:.1f}% of words ({p.translated_words}/{p.total_words}), "
+       f"{p.total - p.translated} entries fall back to English")
     for path, size in result.paks:
         detail(f"{short(path)} ({size / 1024:.0f}K)")
     if result.installed:

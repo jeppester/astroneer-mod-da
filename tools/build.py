@@ -36,8 +36,7 @@ TRANSLATION_ONLY_PAK = "AstroneerDanishTranslationOnly_P.pak"
 
 @dataclass
 class Result:
-    translated: int = 0
-    total: int = 0
+    progress: translations.Progress = field(default_factory=translations.Progress)
     dropped: int = 0
     paks: list = field(default_factory=list)   # (path, size) built this run
     full_built: bool = False
@@ -71,7 +70,7 @@ class Builder:
         if not po_path.is_file():
             raise Failure(f"translation file not found: {po_path}")
         result = Result()
-        result.translated, result.total = translations.progress(po_path)
+        result.progress = translations.progress(po_path)
 
         version, seed, matched = self.game.pak_format()
         if not matched and not quiet:
