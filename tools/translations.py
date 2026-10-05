@@ -1,28 +1,12 @@
-"""The two PO files, and the locres the game actually reads.
+"""Translation store and working copy.
 
-translation/da.po is the source-controlled translation store: a msgctxt ->
-msgstr map containing only text this project's translators wrote. Every entry
-has an empty msgid, so the file carries none of the game's English strings and
-is safe to distribute. The game looks strings up by msgctxt (its namespace +
-string hash), so msgid is not needed to identify an entry.
+translation/da.po is the source-controlled store: msgctxt -> msgstr for every
+key the game has, translated or not. All msgids are empty, so it carries none
+of the game's English text. The game looks strings up by msgctxt, so msgid
+isn't needed to identify an entry.
 
-It holds EVERY key the game has, including ones nobody has translated yet —
-those simply have an empty msgstr. That keeps the full key set under version
-control (so progress is measurable and a key disappearing from the game is
-visible in a diff) at no risk of leaking English text, since both msgid and
-msgstr are empty for an untranslated entry. Such an entry has nothing to
-compile: compile_locres drops it rather than writing an empty string into the
-locres, which would render blank in game instead of falling back to English.
-
-PO was chosen over JSON/YAML because it treats every string the same way: the
-value is always quoted and a newline is always an explicit "\\n", so a
-multi-line translation still shows its line structure without any whitespace
-ever landing at the end of a physical line, where an editor or hook that trims
-line ends could eat it. "msgfmt --check" validates the result.
-
-translation/Game_da.po is the generated working copy. It also carries the
-original English msgid text, needed to translate in Poedit or any PO editor.
-It's gitignored and rebuilt from the game's own files on every start.
+translation/Game_da.po is the gitignored working copy with the English msgids,
+rebuilt from the game's files on every start, for editing in a PO editor.
 """
 
 from dataclasses import dataclass
@@ -30,11 +14,10 @@ from dataclasses import dataclass
 import polib
 from pylocres import Entry, LocresFile, LocresVersion, Namespace
 
-# The locres version the game ships and the one we write back. 3 = CityHash.
+# 3 = CityHash
 LOCRES_VERSION = 3
 
-# Fixed on purpose: anything time-based here (POT-Creation-Date,
-# PO-Revision-Date) would rewrite the store on every sync and churn history.
+# No dates: they would rewrite the store on every sync.
 STORE_METADATA = {
     "Project-Id-Version": "astroneer-mod-da",
     "Language": "da",
@@ -64,13 +47,8 @@ def working_po_from_locres(locres_bytes, po_path):
 def compile_locres(po_path, out_path):
     """Compile a PO into a .locres. Returns (written, dropped).
 
-    An entry with an empty msgstr but a real msgid (the normal case in the
-    working Game_da.po) is written out with its English msgid, so untranslated
-    strings show up in English. An entry with NEITHER — what the store carries
-    for a string nobody has translated yet — has nothing to write, and would
-    otherwise become a real entry holding an empty string, showing up blank in
-    game rather than falling back to English. Those are dropped, so building
-    straight from translation/da.po is safe.
+    Entries with neither msgstr nor msgid (untranslated, from the store) are
+    dropped; writing them would show blank in game instead of English.
     """
     locres = LocresFile()
     locres.version = LocresVersion(LOCRES_VERSION)
@@ -78,8 +56,7 @@ def compile_locres(po_path, out_path):
     for entry in polib.pofile(str(po_path)):
         if entry.msgctxt is None or "," not in entry.msgctxt:
             continue
-        # Exact emptiness, not .strip(): a msgid of "   " is real game content
-        # (a deliberately blank-looking string) and must still be compiled.
+        # Not .strip(): a whitespace-only msgid is real game content.
         if not entry.msgstr and not entry.msgid:
             dropped += 1
             continue
@@ -101,20 +78,12 @@ class Progress:
 
     @property
     def percent(self):
-        """Share of the game's English words that have a translation.
-
-        Weighted by words rather than entries, so a one-word button label
-        doesn't count as much as a paragraph of tutorial text.
-        """
+        """Share of English words translated; words, so labels weigh less than paragraphs."""
         return self.translated_words / self.total_words * 100 if self.total_words else 0.0
 
 
 def progress(po_path):
-    """Progress for a PO file.
-
-    Words are counted in msgid, so this needs the working copy — the store has
-    no English text to count.
-    """
+    """Progress for a PO file. Needs the working copy; the store has no msgids."""
     result = Progress()
     for entry in polib.pofile(str(po_path)):
         words = len(entry.msgid.split())
@@ -129,7 +98,6 @@ def progress(po_path):
 def load_store(store_path):
     if not store_path.exists():
         return {}
-    # Entries the store wrote all carry a msgctxt; the file header does not.
     return {
         e.msgctxt: e.msgstr
         for e in polib.pofile(str(store_path))
@@ -138,8 +106,7 @@ def load_store(store_path):
 
 
 def dump_store(store):
-    # wrapwidth=0 disables line wrapping, so one logical line stays one physical
-    # line and editing a word doesn't reflow (and re-diff) a whole paragraph.
+    # No wrapping, so editing a word doesn't re-diff a whole paragraph.
     po = polib.POFile(wrapwidth=0)
     po.metadata = dict(STORE_METADATA)
     for msgctxt, msgstr in sorted(store.items()):
@@ -160,17 +127,14 @@ def po_to_store(po_path, store_path):
     if not po_path.exists():
         return False
     po = polib.pofile(str(po_path))
-    # Every key, translated or not — an untranslated one is stored with an empty
-    # msgstr so the key set itself stays under version control.
     store = {e.msgctxt: e.msgstr for e in po if e.msgctxt is not None}
     return save_store(store, store_path)
 
 
 def store_to_po(po_path, store_path):
-    """Apply the store's translations onto the working copy.
+    """Apply the store onto the working copy.
 
-    Returns (changed, orphans): orphans are translations with no matching
-    string in the working copy, i.e. keys the game no longer has.
+    Returns (changed, orphans): orphans are store keys the game no longer has.
     """
     if not po_path.exists():
         return False, 0

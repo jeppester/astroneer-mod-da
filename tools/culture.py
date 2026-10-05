@@ -1,25 +1,14 @@
 """Add a language to Astroneer's in-game language dropdown.
 
-The dropdown is not built from the locres files on disk. It is built from a
-single cooked data asset, Astro/Content/Globals/LocalizationCultureOptions,
-which holds one property:
+The dropdown is built from the cooked asset
+Astro/Content/Globals/LocalizationCultureOptions, not from locres files. Its one
+property is a TMap<FString, FString> DisplayLanguageToCultureMapping from menu
+label to culture code ("Deutsch" -> "de"). Danish is missing from it, so
+-culture=da works but the language never shows up in the list.
 
-    TMap<FString, FString> DisplayLanguageToCultureMapping
-
-mapping the label shown in the menu to the culture code the game switches to
-("ENGLISH" -> "en-US", "Deutsch" -> "de", ...). Danish is simply not in that
-map, which is why -culture=da works but the language never appears in the list.
-
-add_language rewrites the pair of cooked files with an extra entry appended:
-
-    LocalizationCultureOptions.uexp    the serialized property data (the map)
-    LocalizationCultureOptions.uasset  the package header (sizes/offsets)
-
-Only three numbers change besides the inserted bytes: the MapProperty's tag
-size, the export's SerialSize, and the package's BulkDataStartOffset.
-
-Both files must ship together in the mod pak; the game reads the header from
-the .uasset and the data from the .uexp.
+add_language appends an entry in the .uexp (the map) and fixes up the .uasset
+header: the MapProperty tag size, the export's SerialSize and the package's
+BulkDataStartOffset. Both files must ship in the pak.
 """
 
 import struct
@@ -53,10 +42,7 @@ class _Reader:
         return struct.unpack("<i", self.take(4))[0]
 
     def fstring(self):
-        """UE FString: int32 length; positive = ASCII, negative = UTF-16LE.
-
-        The length counts the trailing NUL in both cases.
-        """
+        """UE FString: int32 length incl. NUL; positive = ASCII, negative = UTF-16LE."""
         length = self.i32()
         if length == 0:
             return ""
@@ -65,7 +51,7 @@ class _Reader:
         return self.take(-length * 2)[:-2].decode("utf-16-le")
 
     def fname(self):
-        """FName reference in a cooked package: name-table index + number."""
+        """Name-table index + number."""
         return self.u32(), self.u32()
 
 
@@ -78,10 +64,7 @@ def _write_fstring(value):
 
 
 def _read_name_table(data):
-    """Parse just enough of the package summary to read the name table.
-
-    Returns (names, bulk_data_offset_pos, export_offset, export_count).
-    """
+    """Returns (names, bulk_data_offset_pos, export_offset, export_count)."""
     r = _Reader(data, "uasset")
     if r.u32() != PACKAGE_FILE_TAG:
         raise Failure("not a .uasset (bad package tag)")
@@ -132,14 +115,13 @@ def _read_name_table(data):
 
 
 def _export_serial_size_pos(export_offset):
-    """Byte offset of the first export's SerialSize (int64) in the header."""
-    # ClassIndex, SuperIndex, TemplateIndex, OuterIndex (4x int32),
-    # ObjectName (FName, 8 bytes), ObjectFlags (uint32), then SerialSize.
+    """Offset of the first export's SerialSize (int64)."""
+    # Skips ClassIndex, SuperIndex, TemplateIndex, OuterIndex, ObjectName, ObjectFlags.
     return export_offset + 4 * 4 + 8 + 4
 
 
 def _parse_map(uexp, names, prop_name):
-    """Locate the TMap<FString,FString> property and return its entries."""
+    """Returns (entries, size_pos, value_start, value_end) of the map property."""
     r = _Reader(uexp, "uexp")
     name_index, _ = r.fname()
     if names[name_index] != prop_name:
@@ -169,7 +151,7 @@ def _parse_map(uexp, names, prop_name):
 
 
 def read_languages(uasset, uexp, prop_name=MAP_PROPERTY):
-    """The display-name -> culture-code pairs currently in the dropdown."""
+    """The (display name, culture code) pairs in the dropdown."""
     names, _, _export_offset, export_count = _read_name_table(bytes(uasset))
     if export_count != 1:
         raise Failure(f"expected 1 export, found {export_count}")
@@ -178,10 +160,7 @@ def read_languages(uasset, uexp, prop_name=MAP_PROPERTY):
 
 
 def add_language(uasset, uexp, culture, display, prop_name=MAP_PROPERTY):
-    """Return (patched uasset, patched uexp, entries, bytes added to the uexp).
-
-    Passes both files through unchanged when the culture is already listed.
-    """
+    """Return (uasset, uexp, entries, bytes added); unchanged if already listed."""
     uasset = bytearray(uasset)
     uexp = bytes(uexp)
 
@@ -205,7 +184,6 @@ def add_language(uasset, uexp, culture, display, prop_name=MAP_PROPERTY):
     patched_uexp = bytearray(uexp[:value_start] + new_value + uexp[value_end:])
     struct.pack_into("<i", patched_uexp, size_pos, len(new_value))
 
-    # The header carries two byte counts that follow the .uexp's size.
     size_field = _export_serial_size_pos(export_offset)
     serial_size = struct.unpack_from("<q", uasset, size_field)[0]
     bulk_start = struct.unpack_from("<q", uasset, bulk_pos)[0]

@@ -1,8 +1,4 @@
-"""Terminal output, shared by dev.py and the rest of the package.
-
-Colours match what the old shell scripts printed, so the output of a build is
-still recognisable.
-"""
+"""Terminal output shared by dev.py and the rest of the package."""
 
 import sys
 
@@ -12,11 +8,8 @@ _CYAN, _GREEN, _YELLOW, _RED, _RESET = (
 
 
 class Failure(Exception):
-    """A problem the user has to fix. dev.py reports it and exits non-zero.
-
-    Modules raise this instead of calling sys.exit, so the watch loop can
-    decide for itself whether a failure ends the session or just the rebuild.
-    """
+    """A problem the user has to fix. Raised instead of sys.exit so the watch
+    loop can decide whether it ends the session or just the rebuild."""
 
 
 def say(message):

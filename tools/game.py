@@ -1,8 +1,4 @@
-"""One Astroneer install, and the files read out of it.
-
-A Game is a directory that really holds the game — gamefinder.py is what turns
-a guess, a remembered path or an $ASTRONEER_DIR into one.
-"""
+"""One Astroneer install and the files read out of it."""
 
 from pathlib import Path
 
@@ -14,28 +10,19 @@ _PREFERRED_PAK = "pakchunk0-WindowsNoEditor.pak"
 
 
 def _base_pak(game_dir):
-    """The pakchunk0 pak inside game_dir, or None if it isn't an install."""
     paks = Path(game_dir) / _PAK_DIR
     preferred = paks / _PREFERRED_PAK
     if preferred.is_file():
         return preferred
-    # A storefront shipping a build cooked for another platform names the chunk
-    # after that platform instead.
+    # Other storefronts name the chunk after their platform.
     return next(iter(sorted(paks.glob("pakchunk0-*.pak"))), None)
 
 
 class Game:
-    """One Astroneer install: where it sits on disk, and what's inside it.
+    """A directory that really holds an install, or construction fails.
 
-    A Game only exists for a directory that really holds an install, so having
-    one is proof there's something to build against.
-
-    It is also why a rebuild is cheap. Every `repak get` re-parses the base
-    pak's 46k-entry index, which costs ~50 ms a file, so in a long-running
-    session the files are read once and held. The cache is keyed on the base
-    pak's mtime, so a game update still invalidates it: the point of reading
-    these fresh was never to re-read them per build, only to never ship a
-    stale copy.
+    Files are cached because every `repak get` re-parses the base pak's index
+    (~50 ms); the cache is keyed on the pak's mtime so a game update drops it.
     """
 
     def __init__(self, game_dir):
@@ -51,18 +38,17 @@ class Game:
 
     @property
     def paks_dir(self):
-        """Where the game mounts paks from — the install target for a mod."""
+        """Install target for a mod."""
         return self.game_dir / _PAK_DIR
 
     def read(self, path):
-        """One file out of the base pak, from cache when it's still valid."""
         self._check_current()
         if path not in self._cache:
             self._cache[path] = repak.get(self.base_pak, path)
         return self._cache[path]
 
     def try_read(self, path):
-        """Like read, but None instead of raising when the file isn't there."""
+        """Like read, but None if the file isn't there."""
         try:
             return self.read(path)
         except Failure:
@@ -76,7 +62,6 @@ class Game:
         return self._format
 
     def _check_current(self):
-        """Drop everything read before a game update landed."""
         stat = self.base_pak.stat()
         stamp = (stat.st_mtime_ns, stat.st_size)
         if self._stamp != stamp:

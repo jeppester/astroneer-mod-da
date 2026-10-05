@@ -1,20 +1,18 @@
 """Find the local Astroneer install.
 
-GameFinder(repo_dir).find() returns the Game — the install root, the folder
-that contains Astro/ — looking in this order:
+GameFinder(repo_dir).find() returns the Game (the folder containing Astro/),
+looking in this order:
 
-  1. $ASTRONEER_DIR. An explicit override pointing at the wrong place is an
-     error, not a reason to go hunting somewhere else. It covers the one run
-     only and is deliberately NOT remembered, so a throwaway
-     `ASTRONEER_DIR=... ./dev.py` can't quietly repoint the project.
-  2. .astroneer-dir, the answer a previous run remembered.
-  3. Every place a storefront is known to install it, including each Steam
-     library folder listed in libraryfolders.vdf, so a game on a second drive
-     is found without being configured.
-  4. Asking, when there's a terminal to ask on.
+  1. $ASTRONEER_DIR. A bad override is an error, not a reason to keep
+     searching. Never remembered, so a throwaway override can't repoint the
+     project.
+  2. .astroneer-dir, remembered from a previous run.
+  3. Known storefront install paths, including every Steam library listed in
+     libraryfolders.vdf.
+  4. Asking, if there's a terminal.
 
-What 3 or 4 turn up is written to .astroneer-dir (gitignored), so the search
-happens once. Delete that file to search again.
+Results of 3 and 4 are written to .astroneer-dir (gitignored). Delete it to
+search again.
 """
 
 import glob
@@ -32,7 +30,6 @@ _CACHE_HEADER = (
     "# Delete this file to search again, or set ASTRONEER_DIR to override it.\n"
 )
 
-# Steam's root moves around by distro and packaging.
 _STEAM_ROOTS = (
     "~/.local/share/Steam",
     "~/.steam/steam",
@@ -44,8 +41,7 @@ _STEAM_ROOTS = (
     "/usr/share/steam",
 )
 
-# Removable and secondary drives, where a library often sits before Steam has
-# been told about it. Globs; unmatched patterns simply contribute nothing.
+# Libraries on other drives that Steam may not know about yet.
 _STEAM_LIBRARY_GLOBS = (
     "/run/media/*/SteamLibrary",
     "/run/media/*/*/SteamLibrary",
@@ -53,20 +49,18 @@ _STEAM_LIBRARY_GLOBS = (
     "/mnt/*/SteamLibrary",
 )
 
-# Steam installs to ASTRONEER, the Epic build to Astroneer; both are tried
-# everywhere rather than guessing which store a path belongs to.
+# Steam uses ASTRONEER, Epic uses Astroneer.
 _GAME_DIR_NAMES = ("ASTRONEER", "Astroneer")
 
 _OTHER_LOCATIONS = (
-    # Epic, through Heroic or a Wine prefix.
+    # Epic via Heroic or Wine
     "~/Games/Heroic/{name}",
     "~/Games/{name}",
     "~/.wine/drive_c/Program Files/Epic Games/{name}",
     "~/Games/epic-games-store/drive_c/Program Files/Epic Games/{name}",
-    # Steam's own Windows build under Wine.
+    # Steam's Windows build under Wine
     "~/.wine/drive_c/Program Files (x86)/Steam/steamapps/common/{name}",
-    # Windows drives as WSL and as MSYS/git-bash see them. The Microsoft Store
-    # layout nests the game one level down, in Content/.
+    # Windows drives under WSL and MSYS; the Microsoft Store nests the game in Content/
     "/mnt/*/Program Files/Epic Games/{name}",
     "/mnt/*/Program Files (x86)/Steam/steamapps/common/{name}",
     "/mnt/*/XboxGames/{name}/Content",
@@ -84,7 +78,6 @@ def _steam_libraries():
         vdf = root / "steamapps" / "libraryfolders.vdf"
         if not vdf.is_file():
             continue
-        # Each root can point at further library folders on other drives.
         text = vdf.read_text(encoding="utf-8")
         libraries += [Path(p) for p in re.findall(r'"path"\s*"([^"]+)"', text)]
     for pattern in _STEAM_LIBRARY_GLOBS:
@@ -93,7 +86,7 @@ def _steam_libraries():
 
 
 def candidates():
-    """Every place the game is known to land. Cheap: a couple of stats each."""
+    """Every place the game is known to install."""
     found = []
     libraries = _steam_libraries()
     for name in _GAME_DIR_NAMES:
@@ -109,13 +102,13 @@ def candidates():
 
 
 class GameFinder:
-    """Finds the install and remembers where it was, so the search runs once."""
+    """Finds the install and remembers where it was."""
 
     def __init__(self, repo_dir):
         self.cache = Path(repo_dir) / CACHE_NAME
 
     def find(self):
-        """The installed Game. Raises Failure if there's nothing to build against."""
+        """The installed Game. Raises Failure if none is found."""
         override = os.environ.get("ASTRONEER_DIR")
         if override:
             game = self._open(override)
@@ -150,7 +143,7 @@ class GameFinder:
         )
 
     def _open(self, game_dir):
-        """A Game for game_dir, or None when it isn't an install."""
+        """A Game for game_dir, or None if it isn't an install."""
         try:
             return Game(game_dir)
         except Failure:
@@ -172,7 +165,7 @@ class GameFinder:
         ok(f"remembered it in {self.cache.name}")
 
     def _ask(self):
-        """Let the user point at the install. Returns a Game, or None to give up."""
+        """Prompt for the install path. Returns a Game, or None to give up."""
         if not os.isatty(0):
             return None
         print()

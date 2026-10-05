@@ -7,23 +7,19 @@
     ./dev.py --clean          remove build/ and mod-output/, then exit
     ./dev.py --languages      print the game's language dropdown and exit
 
-On start it regenerates workdir/Game_da.po from the game's own English
-strings and applies translation/da.po (the source-controlled store) onto it, so
-a git pull of someone else's translations shows up in the file you're about to
-edit. Any edits already pending in Game_da.po are flushed into the store first,
-so nothing is lost.
+On start, workdir/Game_da.po is regenerated from the game's English strings
+with translation/da.po (the source-controlled store) applied, so pulled
+translations show up in the file you edit. Edits already pending in
+Game_da.po are flushed into the store first.
 
-Then, on every save of Game_da.po: your edits go into da.po and the paks are
-rebuilt. The two sync directions are deliberately not both live — only your
-saves drive the loop, so nothing can bounce between the two files. To pull
-translations mid-session, restart.
+On every save of Game_da.po, your edits go into da.po and the paks are
+rebuilt. Sync only runs in that direction so nothing bounces between the two
+files; restart to pull translations mid-session.
 
---install only takes effect on the game's NEXT launch: Unreal mounts paks at
-startup and holds them while it runs. There's no live reload to be had — the
-loop is save, build, install, relaunch.
+--install takes effect on the game's next launch: Unreal mounts paks at startup.
 
-Needs Astroneer installed; tools/gamefinder.py finds it across storefronts and
-remembers where, so ASTRONEER_DIR is only needed to override that.
+Needs Astroneer installed; tools/gamefinder.py locates it, and ASTRONEER_DIR
+overrides.
 """
 
 import argparse
@@ -40,9 +36,7 @@ from tools.console import Failure, detail, error, ok, say, warn
 from tools.gamefinder import GameFinder
 
 REPO_DIR = Path(__file__).resolve().parent
-# The working PO lives outside translation/ on purpose: a PO editor writes a
-# compiled Game_da.mo next to whatever file it saves, and that artifact has no
-# business sitting beside the source-controlled store.
+# Outside translation/ because PO editors write a compiled .mo next to the saved file.
 WORK_DIR = REPO_DIR / "workdir"
 PO_FILE = WORK_DIR / "Game_da.po"
 STORE_FILE = REPO_DIR / "translation" / "da.po"
@@ -71,7 +65,7 @@ def parse_args(argv=None):
 
 
 def short(path):
-    """A path as the user recognises it: relative to the repo when it's inside."""
+    """Path relative to the repo when inside it."""
     path = Path(path)
     try:
         return str(path.relative_to(REPO_DIR))
@@ -80,18 +74,14 @@ def short(path):
 
 
 def signature(path):
-    """A content hash, so a touched-but-unchanged file doesn't trigger a build."""
+    """Content hash, so a touch without changes doesn't trigger a build."""
     if not path.is_file():
         return None
     return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def settle(path, interval=0.3):
-    """Wait for a file to stop changing.
-
-    A save can land in more than one write — an editor that writes in place is
-    briefly half a file. This is about reading a whole file, not throttling.
-    """
+    """Wait for a file to stop changing (a save can land in several writes)."""
     current = signature(path)
     while True:
         time.sleep(interval)
@@ -111,8 +101,8 @@ def refresh_working_po(game):
     ok(f"{PO_FILE.name}: {p.translated}/{total} entries translated, "
        f"{p.percent:.1f}% of words")
     if orphans:
-        warn(f"{orphans} translation(s) in {STORE_FILE.name} have no matching string "
-             "in the game any more (removed upstream?) — left as-is")
+        warn(f"{orphans} translation(s) in {STORE_FILE.name} no longer match a game string "
+             "(removed upstream?) — left as-is")
 
 
 def report(result, timestamp=False):
@@ -159,7 +149,7 @@ def main(argv=None):
     say(f"Watching {short(PO_FILE)} — save to rebuild (ctrl-c to stop)")
     detail("Edit it in Poedit (https://poedit.net/) or any text editor.")
     if args.install:
-        detail("Each rebuild is installed, but Unreal only picks a pak up at launch,")
+        detail("Each rebuild is installed, but Unreal only picks up paks at launch,")
         detail("so relaunch Astroneer to see a change.")
 
     last = signature(PO_FILE)

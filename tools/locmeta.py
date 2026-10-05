@@ -1,10 +1,7 @@
 """Add a culture to an Unreal Engine .locmeta file.
 
-The stock Astro/Content/Localization/Game/Game.locmeta lists the 14 cultures the
-game shipped with. Danish is not among them, so a da/Game.locres dropped in via
-a mod pak has no entry in the manifest. add_culture rewrites the manifest with
-the new culture inserted, leaving the native culture and native locres path
-untouched.
+The stock Game.locmeta doesn't list Danish, so a da/Game.locres from a mod pak
+has no manifest entry. add_culture inserts it and leaves the rest untouched.
 
 Format (ELocMetaVersion 1 = AddedCompiledCultures):
     FGuid  magic (16 bytes)
@@ -13,10 +10,8 @@ Format (ELocMetaVersion 1 = AddedCompiledCultures):
     FString NativeLocResFilename
     TArray<FString> CompiledCultures
 
-FString here is: int32 length (byte count, including the trailing NUL) followed
-by that many ASCII bytes. (UE writes negative lengths for UTF-16 strings; culture
-codes are always ASCII, so only the positive case is handled and anything else
-is rejected.)
+FString: int32 byte length (including trailing NUL) + ASCII bytes. UE uses a
+negative length for UTF-16; culture codes are ASCII, so that is rejected.
 """
 
 import struct
@@ -65,13 +60,13 @@ def _write_string(value):
 
 
 def read_cultures(data):
-    """The compiled-culture list in a .locmeta, plus the header it belongs to."""
+    """Return (version, native culture, native locres path, compiled cultures)."""
     reader = _Reader(data)
     if reader.take(16) != MAGIC:
         raise Failure("not a .locmeta (bad magic)")
     version = reader.u8()
     if version < 1:
-        raise Failure(f"locmeta version {version} has no compiled-culture list to patch")
+        raise Failure(f"locmeta version {version} has no compiled-culture list")
     native_culture = reader.string()
     native_locres = reader.string()
     cultures = [reader.string() for _ in range(reader.i32())]
@@ -84,11 +79,7 @@ def read_cultures(data):
 
 
 def add_culture(data, culture):
-    """Return (patched locmeta bytes, the resulting culture list).
-
-    Passing through unchanged when the culture is already listed, so this is
-    safe to run against an already-patched file.
-    """
+    """Return (patched locmeta bytes, culture list). No-op if already listed."""
     version, native_culture, native_locres, cultures = read_cultures(data)
     if culture in cultures:
         return bytes(data), cultures

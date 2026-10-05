@@ -1,19 +1,14 @@
 """Build the mod paks.
 
-Two paks are produced. They are ALTERNATIVES — install one, not both, since
-both carry the same Game.locres and Game.locmeta:
+The two paks are alternatives (both carry Game.locres and Game.locmeta):
 
-  AstroneerDanish_P.pak                 translations + an entry in the in-game
-                                        language dropdown. The normal choice.
-  AstroneerDanishTranslationOnly_P.pak  translations only. Does not override
+  AstroneerDanish_P.pak                 translations + a language dropdown entry.
+  AstroneerDanishTranslationOnly_P.pak  translations only. Doesn't override
                                         LocalizationCultureOptions, so it can
-                                        coexist with another language mod that
-                                        patches the same asset. Needs the
-                                        -culture=<code> launch option.
+                                        coexist with other language mods; needs
+                                        the -culture=<code> launch option.
 
-The _P suffix gives a pak higher mount priority than pakchunk0, so its files
-shadow the base game's copies at runtime. Nothing in the game install is
-modified — deleting the pak restores stock behaviour.
+The _P suffix gives a pak higher mount priority than pakchunk0.
 """
 
 import shutil
@@ -29,7 +24,7 @@ LOC_ROOT = f"{CONTENT_ROOT}/Localization/Game"
 LOCMETA_PATH = f"{LOC_ROOT}/Game.locmeta"
 CULTURE_ASSET = f"{CONTENT_ROOT}/Globals/LocalizationCultureOptions"
 
-# Fixed names: the README documents them and people have them installed.
+# Fixed names: documented in the README and already installed by users.
 FULL_PAK = "AstroneerDanish_P.pak"
 TRANSLATION_ONLY_PAK = "AstroneerDanishTranslationOnly_P.pak"
 
@@ -69,14 +64,12 @@ class Builder:
         po_path = Path(po_path)
         if not po_path.is_file():
             raise Failure(f"translation file not found: {po_path}")
-        result = Result()
-        result.progress = translations.progress(po_path)
+        result = Result(progress=translations.progress(po_path))
 
         version, seed, matched = self.game.pak_format()
         if not matched and not quiet:
             warn(f"could not parse base pak info; using defaults {version} / {seed:#X}")
 
-        # ------------------------------------------------ stage the translations
         shutil.rmtree(self.build_dir, ignore_errors=True)
         stage_loc = self.build_dir / "pak-translation-only"
         loc_dir = stage_loc / LOC_ROOT
@@ -85,9 +78,7 @@ class Builder:
         locres_path = loc_dir / self.culture / "Game.locres"
         _, result.dropped = translations.compile_locres(po_path, locres_path)
 
-        # The stock Game.locmeta lists only the cultures the game shipped with,
-        # and it lives at the localization-target root, not inside the culture
-        # folder. Add ours so the new locres is part of the manifest.
+        # The stock locmeta only lists the shipped cultures.
         patched_locmeta, cultures = locmeta.add_culture(
             self.game.read(LOCMETA_PATH), self.culture
         )
@@ -103,20 +94,14 @@ class Builder:
                 detail(f"dropped {result.dropped} untranslated entries with no English fallback")
             detail(f"locmeta lists {len(cultures)} cultures: {', '.join(cultures)}")
 
-        # ------------------------------------- pak 1: translations on their own
         repak.pack(
             stage_loc, self.translation_only_pak, version, seed,
             expected=(expected_locres, expected_locmeta),
         )
         result.paks.append((self.translation_only_pak, self.translation_only_pak.stat().st_size))
 
-        # ------------------------- pak 2: translations + the dropdown entry
-        # Nothing enumerates the locres folders at runtime — the in-game
-        # language list comes from the DisplayLanguageToCultureMapping map
-        # inside the LocalizationCultureOptions asset, so this pak ships an
-        # overriding copy with our culture appended. That override is the only
-        # reason the two paks differ, and the only thing that can clash with
-        # another language mod.
+        # The in-game language list comes from DisplayLanguageToCultureMapping
+        # in LocalizationCultureOptions, so the full pak overrides that asset.
         uasset = self.game.try_read(f"{CULTURE_ASSET}.uasset")
         uexp = self.game.try_read(f"{CULTURE_ASSET}.uexp")
         if uasset and uexp:
@@ -148,7 +133,7 @@ class Builder:
             result.paks.append((self.full_pak, self.full_pak.stat().st_size))
             result.full_built = True
         else:
-            # Never leave a stale full pak beside a freshly built one.
+            # Don't leave a stale full pak behind.
             self.full_pak.unlink(missing_ok=True)
             warn(f"skipped {self.full_pak.name} — it embeds an override of the game's own")
             warn("LocalizationCultureOptions asset, which could not be read from the base pak.")
@@ -162,8 +147,7 @@ class Builder:
         if not dest_dir.is_dir():
             raise Failure(f"game Paks directory not found: {dest_dir}")
         chosen = self.full_pak if full_built else self.translation_only_pak
-        # The two paks overlap, so clear the other one rather than leaving the
-        # game to pick between two copies of Game.locres.
+        # The paks overlap, so remove the other one.
         for other in (self.full_pak, self.translation_only_pak):
             if other == chosen:
                 continue

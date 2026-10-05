@@ -1,15 +1,7 @@
 """Read and write Unreal .pak files through the bundled repak binary.
 
-repak is the one external program this project runs. It stays a subprocess
-because it is fast (a pack plus a verifying listing costs ~14 ms) and because
-its output is the pak format already confirmed to work in the game.
-
-There is exactly one repak — the vendored copy beside this file — so these are
-plain functions over a module-level BINARY rather than methods on something to
-instantiate and pass around. Call them qualified (`repak.get(...)`,
-`repak.pack(...)`) and they read as the command line they run. The binary is
-checked on first use, not at import, so simply importing this module can't
-fail.
+Use qualified (`repak.get(...)`, `repak.pack(...)`). The binary is checked on
+first use, not at import.
 """
 
 import subprocess
@@ -19,8 +11,7 @@ from .console import Failure
 
 BINARY = Path(__file__).resolve().parent / "repak" / "repak"
 
-# What pakchunk0-WindowsNoEditor.pak reports today, used only if its own format
-# can't be parsed out of `repak info`.
+# Used when the base pak's format can't be read from `repak info`.
 FALLBACK_VERSION = "V11"
 FALLBACK_PATH_HASH_SEED = 0x1C2BCA8D
 
@@ -40,16 +31,11 @@ def _run(*args, binary_output=False):
 
 
 def _list_files(pak):
-    """Every path inside a pak."""
     return [line for line in _run("list", pak).splitlines() if line.strip()]
 
 
 def format_of(pak):
-    """(version, path_hash_seed, matched) of an existing pak.
-
-    A patch pak whose version or seed disagrees with the base pak can fail to
-    mount, so the mod pak is always built to match.
-    """
+    """(version, path_hash_seed, matched); a patch pak must match its base pak's format."""
     try:
         info = _run("info", pak)
     except Failure:
@@ -68,12 +54,11 @@ def format_of(pak):
 
 
 def get(pak, path):
-    """The bytes of one file inside a pak."""
     return _run("get", pak, path, binary_output=True)
 
 
 def pack(stage_dir, out, version, path_hash_seed, expected=()):
-    """Pack a staged tree, then check the result contains what it should."""
+    """Pack a staged tree and verify the result contains `expected`."""
     out = Path(out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.unlink(missing_ok=True)
