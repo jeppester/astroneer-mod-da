@@ -5009,15 +5009,15 @@ msgstr "KOSMETISKE BELØNNINGER"
 
 msgctxt "AstroUI,CreativeMode_ProgressionEnabled"
 msgid ""
-msgstr ""
+msgstr "FREMSKRIT MOD {0} OG BEGIVENHEDER ER AKTIVERET I DENNE GEM"
 
 msgctxt "AstroUI,CreativeMode_ProgressionWarning"
 msgid ""
-msgstr ""
+msgstr "VED AT SPILLE I KREATIV TILSTAND DEAKTIVERES FREMSKRIDT MOD {0} I DENNE GEM!"
 
 msgctxt "AstroUI,CreativeMode_Switch_Progression_Warning"
 msgid ""
-msgstr ""
+msgstr "VED AT SPILLE I KREATIV TILSTAND DEAKTIVERES FREMSKRIDT MOD KOSMETISKE BELØNNINGER I DENNE GEM!"
 
 msgctxt "AstroUI,Full_Screen_Linktext1_DLC"
 msgid ""
@@ -5033,7 +5033,7 @@ msgstr "Gå til Butik"
 
 msgctxt "AstroUI,Full_Screen_Message1_DLC"
 msgid ""
-msgstr ""
+msgstr "Køb disse pakker i Steam for at støtte System Era og låse op for “Vintage” farvepallette og visir!"
 
 msgctxt "AstroUI,Full_Screen_Message_Event1"
 msgid ""
@@ -5113,7 +5113,7 @@ msgstr "Kun I En Begrænset Periode"
 
 msgctxt "AstroUI,MOTD_LTE_lunar"
 msgid ""
-msgstr ""
+msgstr "Månenytårsbegivenhed Afsluttes "
 
 msgctxt "AstroUI,MOTD_LTE_spring_ends"
 msgid ""
@@ -5153,23 +5153,23 @@ msgstr "HACKET"
 
 msgctxt "AstroUI,Notification_Loading"
 msgid ""
-msgstr ""
+msgstr "INDLÆSER"
 
 msgctxt "AstroUI,Notification_NeedFuel"
 msgid ""
-msgstr ""
+msgstr "MANGLER BRÆNDSTOF"
 
 msgctxt "AstroUI,Notification_NeedThruster"
 msgid ""
-msgstr ""
+msgstr "MANGLER RAKETMOTOR"
 
 msgctxt "AstroUI,Notification_NoOxygen"
 msgid ""
-msgstr ""
+msgstr "INGEN ILT"
 
 msgctxt "AstroUI,Notification_NoPower"
 msgid ""
-msgstr ""
+msgstr "INGEN STRØM"
 
 msgctxt "AstroUI,Notification_ReconnectController"
 msgid ""
@@ -5262,11 +5262,11 @@ msgstr "NUVÆRENDE SPIL '{0}' KAN VÆRE FOR STORT TIL AT GEMME MED EN FILSTØRRE
 
 msgctxt "AstroUI,Warning_StorageSpaceLastSaveFailedMaxExceeded"
 msgid ""
-msgstr ""
+msgstr "KUNNE IKKE GEMME SPILLET '{0}': GEMFILENS STØRRELSE; {1} OVERSKRIDER DEN MAKSIMALE FILSTØRRELSE."
 
 msgctxt "AstroUI,Warning_StorageSpaceLastSaveFailedTooBig"
 msgid ""
-msgstr ""
+msgstr "KUNNE IKKE GEMME SPILLET '{0}': DER ER IKKE NOK PLADS PÅ ENHEDEN FILENS STØRRELSE ER {1}. BRUG 'SPIL ALENE'-SEKTIONEN I SPILLETS HOVEDMENU FOR AT SLETTE GEMTE SPIL OG FRIGØRE PLADS."
 
 msgctxt "AstroneerMessages,Astroneers_UI_Astroneer10_Description"
 msgid ""
@@ -6762,7 +6762,7 @@ msgstr "Chronos Krone"
 
 msgctxt "Chronos,Chronos_Item_ChronosCrown_Subtitle"
 msgid ""
-msgstr ""
+msgstr "Hat"
 
 msgctxt "Chronos,Chronos_Item_EVACompanionCreative_Description"
 msgid ""
@@ -6834,7 +6834,7 @@ msgstr "Eleverende Virtuel Avatar"
 
 msgctxt "Chronos,Chronos_Item_FaultFinderActiveType1_Subtitle"
 msgid ""
-msgstr ""
+msgstr "Indsaml"
 
 msgctxt "Chronos,Chronos_Item_FaultFinderActiveType2_Subtitle"
 msgid ""
@@ -6850,7 +6850,7 @@ msgstr "[FEJL // METODE UBESTEMT]"
 
 msgctxt "Chronos,Chronos_Item_FaultFinderActive_Subtitle"
 msgid ""
-msgstr ""
+msgstr "Sporingsmetode: {type}"
 
 msgctxt "Chronos,Chronos_Item_FaultFinderBase_Description"
 msgid ""
@@ -6919,7 +6919,7 @@ msgstr "Fejlfinder"
 
 msgctxt "Chronos,Chronos_Item_FaultFinder_Name_AllCaps"
 msgid ""
-msgstr ""
+msgstr "FEJLFINDER"
 
 msgctxt "Chronos,Chronos_Item_FractalRoseSeed_Description"
 msgid ""
@@ -7040,7 +7040,7 @@ msgstr "TILGÅ SIDSTE LOG"
 
 msgctxt "Chronos,Chronos_LogData_DataLogOverlayMemIntegration_Label"
 msgid ""
-msgstr ""
+msgstr "DATA KLAR TIL GENSKABELSE"
 
 msgctxt "Chronos,Chronos_LogData_DataLogOverlayMemIntegration_Prompt"
 msgid ""
@@ -7649,7 +7649,7 @@ msgstr "Nuvel, Vores Mission "
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009a_Description"
 msgid ""
-msgstr ""
+msgstr "Vær ikke bekymret. Vi fortsætter på samme måde indtil vi finder de minder vi skal bruge. Jeg har fundet et andet minde som kan hentes på Calidor. Som du nok allerede har gættet, skal du plante dekrypteringsnøglerne i de områder jeg har givet dig. "
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009a_Objective1"
 msgid ""
@@ -7736,11 +7736,11 @@ msgstr "Jeg er en Ræv "
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009g_Description"
 msgid ""
-msgstr ""
+msgstr "Det var nok skæg og ballade for nu. Vi er tæt på at låse op for al den information jeg skal bruge, men disse minder er ikke de rigtige. "
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009g_Objective1"
 msgid ""
-msgstr ""
+msgstr "Dans for at forlænge \"skæg og ballade\"-tiden"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009g_Title"
 msgid ""
@@ -7844,7 +7844,7 @@ msgstr "Bruge gestushjulet til at svare Eva. Gestusser kan tildeles hjulet via t
 
 msgctxt "Chronos,Chronos_UI_FaultFinderCompass_Notification"
 msgid ""
-msgstr ""
+msgstr "Mindefragmenter opsporet // Kompasnavigeringspunkt tilføjet"
 
 msgctxt "Chronos,Chronos_UI_FaultFinderErrorLocation1_Notification"
 msgid ""
@@ -7900,7 +7900,7 @@ msgstr "Simulationsbrister kan findes hvor som helst på overfladen af Vesania"
 
 msgctxt "Chronos,Chronos_UI_FractalRoseSeedErrorBiome_Notification"
 msgid ""
-msgstr ""
+msgstr "DEKRYPTERINGSBIOME IKKE TIL STEDE"
 
 msgctxt "Chronos,Chronos_UI_LRDListen_UseContext"
 msgid ""
