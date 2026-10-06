@@ -6771,6 +6771,10 @@ msgstr "Når den befinder sig i en rygsæk, og holdes mæt, lader den spilleren 
 msgctxt "Chronos,Chronos_Item_EVACompanion_Description"
 msgid ""
 msgstr ""
+"Hej. Det er godt at se dig igen. \n"
+"\n"
+"Jeg har lagt mærke til at du er begrænset af plagsomme dele af simulationen, som tyngdekraften. Hvis du kan give mig en af dekrypteringsnøglerne (min \"livret\") så kan jeg midlertidigt afbryde denne vilkårlige restriktion.\n"
+"\n"
 
 msgctxt "Chronos,Chronos_Item_EVA_Description"
 msgid ""
@@ -7199,6 +7203,13 @@ msgstr "Planetobservationer: Vesania"
 msgctxt "Chronos,Chronos_LogData_Group2_Item3_Description"
 msgid ""
 msgstr ""
+"Det er aldrig lykkedes at genskabe Glacio på perfekt vis i et træningsprogram, så det overrasker mig ikke at der er en masse problemer med den efter styrtet.  \n"
+"\n"
+"Det største problem er at styre temperaturen. Træningsprogrammets formål er at træne Astroneers i at overleve svære forhold. Derfor genskaber det Glacio's to polare ekstremer: Glohed varme og isnende kulde.  \n"
+"\n"
+"Den beskadigede data har imidlertid, skabt et scenarie hvor Glacio er iskold -- med undtagelse af nogle få varme \"lommer\" der har forårsaget at Astroneers er faldet ned i delvist smeltede gletsjere, blot for at fryse fast i den samme is få øjeblikke senere.  \n"
+"\n"
+"Heldigvis er det lykkedes for alle at undslippe. "
 
 msgctxt "Chronos,Chronos_LogData_Group2_Item3_Title"
 msgid ""
@@ -7405,7 +7416,7 @@ msgstr "Planlagt Nedbrud"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos005_Description"
 msgid ""
-msgstr ""
+msgstr "Hej igen. Dette er kontrolcenteret for Astroneer-træningsprogrammet. Jeg har givet dig adgang. Glæd dig. Nu beder jeg dig tjekke Solrumsloggen, så du kan lære om den udfordring vi står overfor."
 
 msgctxt "Chronos,Chronos_MissionData_Chronos005_Objective1"
 msgid ""
@@ -7437,7 +7448,7 @@ msgstr "Ifølge systemloggene, blev Chronos' Sindsbank beskadiget. Han spredte s
 
 msgctxt "Chronos,Chronos_MissionData_Chronos005b_Objective1"
 msgid ""
-msgstr ""
+msgstr "Ram den store grønne knap for at bekræfte at du lytter efter"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos005b_Title"
 msgid ""
@@ -7533,11 +7544,11 @@ msgstr "Jeg har lavet endnu en mission for at løfte dig humør. Men, jeg har go
 
 msgctxt "Chronos,Chronos_MissionData_Chronos007f_Objective1"
 msgid ""
-msgstr ""
+msgstr "Hold \"læs\" på mit første værktøjstip"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos007f_Objective2"
 msgid ""
-msgstr ""
+msgstr "Hold \"læs\" på mit andet værktøjstip"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos007f_Title"
 msgid ""
@@ -7669,7 +7680,7 @@ msgstr "Mindefejl: Håb"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009b_Description"
 msgid ""
-msgstr ""
+msgstr "Her er endnu en Fejlfinder. Brug den til at frigøre minderne på Calidor. Når du har indsamlet mindefragmenterne, så placér dem i Fejlfinderen for lette transporten."
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009b_Objective1"
 msgid ""
@@ -7728,7 +7739,7 @@ msgstr ""
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009f_Objective1"
 msgid ""
-msgstr ""
+msgstr "Hold \"læs\" på mit første værktøjstip"
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009f_Title"
 msgid ""
@@ -10122,7 +10133,7 @@ msgstr "BUK"
 
 msgctxt "Emotes,Emote_Broom"
 msgid ""
-msgstr ""
+msgstr "KOSTEFEJ"
 
 msgctxt "Emotes,Emote_CatClean"
 msgid ""
@@ -10182,7 +10193,7 @@ msgstr "FLIP"
 
 msgctxt "Emotes,Emote_GiddyClapping"
 msgid ""
-msgstr ""
+msgstr "GLÆDESKLAP"
 
 msgctxt "Emotes,Emote_GrabHeartAndStagger"
 msgid ""
@@ -10190,7 +10201,7 @@ msgstr "LIGE I HJERTET"
 
 msgctxt "Emotes,Emote_GreetTheDawn"
 msgid ""
-msgstr ""
+msgstr "BYD SOLOPGANGEN VELKOMMEN"
 
 msgctxt "Emotes,Emote_GunShow"
 msgid ""
@@ -10206,7 +10217,7 @@ msgstr "GIV MIG FEM"
 
 msgctxt "Emotes,Emote_Imaginate"
 msgid ""
-msgstr ""
+msgstr "FANTASIFULD"
 
 msgctxt "Emotes,Emote_JumpForJoy"
 msgid ""
@@ -10214,7 +10225,7 @@ msgstr "LYKKEHOP"
 
 msgctxt "Emotes,Emote_JumpJacks"
 msgid ""
-msgstr ""
+msgstr "SPRÆLLEMÆND"
 
 msgctxt "Emotes,Emote_JumpScare"
 msgid ""
