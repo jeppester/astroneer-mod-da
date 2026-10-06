@@ -535,7 +535,7 @@ msgstr "[INI PROT FSE:] TECNOLOGÍA DE AUTOMATIZACIÓN DESPLEGADA PARA REABASTEC
 
 msgctxt ",23D517F2439FC179F9D4C28B0E40E0B3"
 msgid ""
-msgstr "Iltlinebooper"
+msgstr "Tether Booper"
 
 msgctxt ",23FC37C24FC51FFEC6F0748627DD810C"
 msgid ""
@@ -5037,7 +5037,7 @@ msgstr ""
 
 msgctxt "AstroUI,Full_Screen_Message_Event1"
 msgid ""
-msgstr ""
+msgstr "Så er det tid til at komme ind indsamlings- og byggehumør i anledning af Vinterbegivenheden! Lås op for nye kosmetikgenstande og en dragt. Alle detaljer er tilgængelig i bloggen!"
 
 msgctxt "AstroUI,Full_Screen_Message_Sale"
 msgid ""
@@ -5105,7 +5105,7 @@ msgstr "Efterårsbegivenhed Slutter "
 
 msgctxt "AstroUI,MOTD_LTE_general"
 msgid ""
-msgstr ""
+msgstr "Meld Dig Til Denne Tidsbegrænsede Begivenhed"
 
 msgctxt "AstroUI,MOTD_LTE_general2"
 msgid ""
@@ -5236,15 +5236,21 @@ msgstr ""
 
 msgctxt "AstroUI,Steam_DLC_Included_Title"
 msgid ""
-msgstr ""
+msgstr "INKLUDEREDE GENSTANDE"
 
 msgctxt "AstroUI,Steam_DLC_SupporterBundle1_Copy"
 msgid ""
 msgstr ""
+"For at fejre 7-års jubilæum for vores Early Access og det kommende 5-års jubilæum for version 1.0, udgiver vi en støttepakke med med en samling af vores favoritdragter og et gensyn med den meget efterspurgte “Vintage”-farvepalette og tilhørende visir! For dem af jer der har været med siden start, er dette en måde at støtte System Era og fremtidige indholdsopdateringer til Astroneer. Føler du dig en smule skamfuld når vi år efter år annoncerer endnu en fremtidsplan fyldt med gratis opdateringer? Så får du her muligheden for at takke os for arbejdet og hjælpe os med et fortsætte. \n"
+" \n"
+"Denne pakke indeholder tre dragter samt “Vintage”-farvepalette og visir! "
 
 msgctxt "AstroUI,Steam_DLC_SupporterBundle2_Copy"
 msgid ""
 msgstr ""
+"For at fejre 7-års jubilæum for vores Early Access og det kommende 5-års jubilæum for version 1.0, udgiver vi en støttepakke med en helt ny dragt! For dem af jer der har været med siden start, er dette en måde at støtte System Era og fremtidige indholdsopdateringer til Astroneer. Føler du dig en smule skamfuld når vi år efter år annoncerer endnu en fremtidsplan fyldt med gratis opdateringer? Så får du her muligheden for at takke os for arbejdet og hjælpe os med et fortsætte. \n"
+" \n"
+"Den helt nye Seje Træningsdragt er udelukkende tilgængelig i støttepakken, sammen med et udvalg af vores favorittilbehør. Sammen med dragten, og direkte fra vores arkiv, får du også et gensyn med den meget efterspurgte “Vintage”-farvepalette og tilhørende visir! "
 
 msgctxt "AstroUI,UI_Action_Unbundle_Label"
 msgid ""
@@ -22610,7 +22616,7 @@ msgstr ""
 
 msgctxt "Suits,Name_AllCaps_Suit_Athleisure"
 msgid ""
-msgstr ""
+msgstr "SEJ TRÆNINGSDRAGT"
 
 msgctxt "Suits,Name_AllCaps_Suit_BabyMech"
 msgid ""
