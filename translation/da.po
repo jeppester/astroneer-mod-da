@@ -575,7 +575,7 @@ msgstr "Smældere"
 
 msgctxt ",2603055343A3FC1C7CBAD0B50CEA7659"
 msgid ""
-msgstr ""
+msgstr "Grafik"
 
 msgctxt ",262D4D8C423EE54DFE88028E0DA95102"
 msgid ""
@@ -2222,7 +2222,7 @@ msgstr "VELKOMMEN"
 
 msgctxt ",A4CA67C34234458A2BF28D97E2546C9D"
 msgid ""
-msgstr ""
+msgstr "KeyboardMus"
 
 msgctxt ",A51CF2034E3319398C37698218DDDC4E"
 msgid ""
@@ -10345,27 +10345,27 @@ msgstr "JA"
 
 msgctxt "FallEvent_2024,Description_Fall_Biofuel2024"
 msgid ""
-msgstr ""
+msgstr "En alternativ brændstofkilde, på forespørgsel af EXO Dynamik. Ser velsmagende ud."
 
 msgctxt "FallEvent_2024,Description_Fall_Lore1"
 msgid ""
-msgstr ""
+msgstr "\"JEG ER TILBAGE! Stiger op af asken - som en fønix! En eller anden karl smart prøvede at tage gamle Frank offline, men jeg fandt ud af at aliaset er ‘Bl!tZ.’ Hvem mon det er?” -Frank"
 
 msgctxt "FallEvent_2024,Description_Fall_Lore2"
 msgid ""
-msgstr ""
+msgstr "{ j36 h4R g!vE1 a_Ll3 #!ntz DU_H4r_8RU63_F0r }” -Bl!tZ"
 
 msgctxt "FallEvent_2024,Description_Fall_Lore3"
 msgid ""
-msgstr ""
+msgstr "“Jeg er bekymret for simulationens stabilitet. I dag måtte jeg hjælpe endnu en stakkels Astroneer der blev elektrificeret under en storm. Det kan ikke fortsætte på denne måde.” -Dr. Lady"
 
 msgctxt "FallEvent_2024,Description_Fall_Lore4"
 msgid ""
-msgstr ""
+msgstr "“Ahva?, skulle Bl!tZ være en eller anden slags Astroneer-hacker? Det må være en der render rundt med en giga chip på skulderen, men som virkelig har styr på sagerne...” -Frank"
 
 msgctxt "FallEvent_2024,Description_Fall_Lore5"
 msgid ""
-msgstr ""
+msgstr "“Verden opløses bare, og ingenting jeg prøver virker. Jeg ville ønske var nogen jeg kunne bede om hjælp fra. Hvad hvis alt forsvinder... også mig?” -Ukendt"
 
 msgctxt "FallEvent_2024,Description_Fall_Mission"
 msgid ""
@@ -10378,171 +10378,171 @@ msgstr ""
 
 msgctxt "FallEvent_2024,Name_AllCaps_Fall_2024_Plant_Leek"
 msgid ""
-msgstr ""
+msgstr "PORREKNOLD"
 
 msgctxt "FallEvent_2024,Name_AllCaps_Fall_2024_Plant_Resipound"
 msgid ""
-msgstr ""
+msgstr "MAJSTER"
 
 msgctxt "FallEvent_2024,Name_AllCaps_Fall_2024_Seed_Leek"
 msgid ""
-msgstr ""
+msgstr "PORREKNOLDFRØ"
 
 msgctxt "FallEvent_2024,Name_AllCaps_Fall_2024_Seed_Resipound"
 msgid ""
-msgstr ""
+msgstr "MAJSTERFRØ"
 
 msgctxt "FallEvent_2024,Name_Fall_2024_Plant_Leek"
 msgid ""
-msgstr ""
+msgstr "Porreknold"
 
 msgctxt "FallEvent_2024,Name_Fall_2024_Plant_Resipound"
 msgid ""
-msgstr ""
+msgstr "Majster"
 
 msgctxt "FallEvent_2024,Name_Fall_2024_Seed_Leek"
 msgid ""
-msgstr ""
+msgstr "Porreknoldfrø"
 
 msgctxt "FallEvent_2024,Name_Fall_2024_Seed_Resipound"
 msgid ""
-msgstr ""
+msgstr "Majsterfrø"
 
 msgctxt "FallEvent_2024,Name_Fall_Biofuel2024"
 msgid ""
-msgstr ""
+msgstr "S.O.U.P."
 
 msgctxt "FallEvent_2024,Name_Fall_Lore1"
 msgid ""
-msgstr ""
+msgstr "Datakredsløb Model D 1/5"
 
 msgctxt "FallEvent_2024,Name_Fall_Lore2"
 msgid ""
-msgstr ""
+msgstr "Datakredsløb Model D 2/5"
 
 msgctxt "FallEvent_2024,Name_Fall_Lore3"
 msgid ""
-msgstr ""
+msgstr "Datakredsløb Model D 3/5"
 
 msgctxt "FallEvent_2024,Name_Fall_Lore4"
 msgid ""
-msgstr ""
+msgstr "Datakredsløb Model D 4/5"
 
 msgctxt "FallEvent_2024,Name_Fall_Lore5"
 msgid ""
-msgstr ""
+msgstr "Datakredsløb Model D 5/5"
 
 msgctxt "Firework_Variants,Description_Firework_Crafted"
 msgid ""
-msgstr ""
+msgstr "Aldeles sikkert hjemmelavet sprængstof"
 
 msgctxt "Firework_Variants,Description_FireworksDelivery"
 msgid ""
-msgstr ""
+msgstr "Nyd genstandene der er med i denne pakke"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Black"
 msgid ""
-msgstr ""
+msgstr "SORT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Blue"
 msgid ""
-msgstr ""
+msgstr "BLÅT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Brown"
 msgid ""
-msgstr ""
+msgstr "BRUNT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Gold"
 msgid ""
-msgstr ""
+msgstr "GULDFYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Green"
 msgid ""
-msgstr ""
+msgstr "GRØNT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Orange"
 msgid ""
-msgstr ""
+msgstr "ORANGE FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Pink"
 msgid ""
-msgstr ""
+msgstr "LYSERØDT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Red"
 msgid ""
-msgstr ""
+msgstr "RØDT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_SIlver"
 msgid ""
-msgstr ""
+msgstr "SØLVFYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Teal"
 msgid ""
-msgstr ""
+msgstr "BLÅGRØNT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Violet"
 msgid ""
-msgstr ""
+msgstr "LILLA FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_White"
 msgid ""
-msgstr ""
+msgstr "HVIDT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_AllCaps_Firework_Yellow"
 msgid ""
-msgstr ""
+msgstr "GULT FYRVÆRKERI"
 
 msgctxt "Firework_Variants,Name_Firework_Black"
 msgid ""
-msgstr ""
+msgstr "Sort Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Blue"
 msgid ""
-msgstr ""
+msgstr "Blåt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Brown"
 msgid ""
-msgstr ""
+msgstr "Brunt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Gold"
 msgid ""
-msgstr ""
+msgstr "Guldfyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Green"
 msgid ""
-msgstr ""
+msgstr "Grønt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Orange"
 msgid ""
-msgstr ""
+msgstr "Orange Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Pink"
 msgid ""
-msgstr ""
+msgstr "Lyserødt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Red"
 msgid ""
-msgstr ""
+msgstr "Rødt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Silver"
 msgid ""
-msgstr ""
+msgstr "Sølvfyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Teal"
 msgid ""
-msgstr ""
+msgstr "Blågrønt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Violet"
 msgid ""
-msgstr ""
+msgstr "Lilla Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_White"
 msgid ""
-msgstr ""
+msgstr "Hvidt Fyrværkeri"
 
 msgctxt "Firework_Variants,Name_Firework_Yellow"
 msgid ""
-msgstr ""
+msgstr "Gult Fyrværkeri"
 
 msgctxt "GameMenu,Astropedia_Action_Wheel"
 msgid ""
@@ -10654,7 +10654,7 @@ msgstr "AGGRESSIV FLORA"
 
 msgctxt "GameMenu,Astropedia_Hazards_Title2"
 msgid ""
-msgstr ""
+msgstr "AGGRESSIV FLORA"
 
 msgctxt "GameMenu,Astropedia_Interact"
 msgid ""
@@ -10942,11 +10942,11 @@ msgstr "VENSTRE"
 
 msgctxt "GameMenu,ControlsBinding_PressButton"
 msgid ""
-msgstr ""
+msgstr "< TRYK PÅ EN KNAP FOR AT BINDE >"
 
 msgctxt "GameMenu,ControlsBinding_PressKey"
 msgid ""
-msgstr ""
+msgstr "< TRYK PÅ EN TAST FOR AT BINDE >"
 
 msgctxt "GameMenu,ControlsBinding_Right"
 msgid ""
@@ -11082,7 +11082,7 @@ msgstr "NULSTIL KNAPTILDELINGER"
 
 msgctxt "GameMenu,Coop_AddServer"
 msgid ""
-msgstr ""
+msgstr "TILFØJ DEDIKERET SERVER"
 
 msgctxt "GameMenu,Coop_EnableMultiplayer"
 msgid ""
@@ -11218,7 +11218,7 @@ msgstr "BEKLÆDNING {0}"
 
 msgctxt "GameMenu,Customization_ObfuscatedDisplayName"
 msgid ""
-msgstr ""
+msgstr "??????"
 
 msgctxt "GameMenu,Customization_OverwriteOutfit"
 msgid ""
@@ -11342,7 +11342,7 @@ msgstr ""
 
 msgctxt "GameMenu,GeneralOption_Active"
 msgid ""
-msgstr ""
+msgstr "AKTIV"
 
 msgctxt "GameMenu,GeneralOption_Back"
 msgid ""
@@ -11812,7 +11812,7 @@ msgstr "< INDTAST SERVER IP >"
 
 msgctxt "GameMenu,Popout_EnterServerName"
 msgid ""
-msgstr ""
+msgstr "< INDTAST SERVERNAVN >"
 
 msgctxt "GameMenu,Popout_KeybindingReset_Warning"
 msgid ""
@@ -11838,7 +11838,7 @@ msgstr "KODE TIL INDLØSNING"
 
 msgctxt "GameMenu,Popout_Redeem_EnterCode"
 msgid ""
-msgstr ""
+msgstr "< INDTAST KODE >"
 
 msgctxt "GameMenu,Popout_Redeem_Error"
 msgid ""
@@ -12133,7 +12133,7 @@ msgstr "REPARATION AF GEMT SPIL  [EKSPERIMENTAL]"
 
 msgctxt "GameMenu,Solo_RenameSavePrompt"
 msgid ""
-msgstr ""
+msgstr "< INDTAST NYT NAVN >"
 
 msgctxt "GameMenu,Submenu_Astropedia"
 msgid ""
