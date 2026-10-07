@@ -10566,7 +10566,7 @@ msgstr ""
 
 msgctxt "GameMenu,Astropedia_AstroBasics"
 msgid ""
-msgstr ""
+msgstr "ASTRONEER - DET BASALE"
 
 msgctxt "GameMenu,Astropedia_AtmoCondenser_Description"
 msgid ""
@@ -10582,11 +10582,11 @@ msgstr ""
 
 msgctxt "GameMenu,Astropedia_Automation"
 msgid ""
-msgstr ""
+msgstr "AUTOMATISERING"
 
 msgctxt "GameMenu,Astropedia_AutomationItems"
 msgid ""
-msgstr ""
+msgstr "AUTOMATISERINGSGENSTANDE"
 
 msgctxt "GameMenu,Astropedia_BackpackNavpoint"
 msgid ""
@@ -10850,7 +10850,7 @@ msgstr ""
 
 msgctxt "GameMenu,AudioOption_AmbientEffectsVoume"
 msgid ""
-msgstr ""
+msgstr "BAGGRUNDSLYDE LYDSTYRKE"
 
 msgctxt "GameMenu,AudioOption_GamepadSpeakerVolume"
 msgid ""
@@ -10870,7 +10870,7 @@ msgstr ""
 
 msgctxt "GameMenu,AudioOption_VoiceVolume"
 msgid ""
-msgstr ""
+msgstr "ASTRONEER STEMMELYDSTYRKE"
 
 msgctxt "GameMenu,Cinematic_Skip"
 msgid ""
@@ -11290,7 +11290,7 @@ msgstr "DU ER BLEVET FJERNET FRA MULTIPLAYER-SESSIONEN FORDI DU IKKE EJER MEGATE
 
 msgctxt "GameMenu,ExperimentalOption_Confirmation"
 msgid ""
-msgstr ""
+msgstr "ER DU SIKKER PÅ AT DU ØNSKER AT SLETTE OBJEKTER VED INDLÆSNINGS MED DENNE INDSTILLING? DET FORHINDRER NOGLE TYPER AF OBJEKTER I AT INDLÆSES OG KAN HAVE INDFLYDELSE PÅ DIN SPILOPLEVELSE."
 
 msgctxt "GameMenu,ExperimentalOption_Description_SanitizeCompleteMissionPlacements"
 msgid ""
@@ -11306,7 +11306,7 @@ msgstr "IKKE-PERMANENTE GENSTANDE HAR FÅET JUSTERET DERES FOREKOMSTRATER I FORH
 
 msgctxt "GameMenu,ExperimentalOption_Description_SanitizePartialNuggets"
 msgid ""
-msgstr ""
+msgstr "ALLE UHELE RESSOURCER VIL BLIVE FJERNET FRA GEMMEN."
 
 msgctxt "GameMenu,ExperimentalOption_SanitizeCompleteMissionPlacements"
 msgid ""
@@ -11478,7 +11478,7 @@ msgstr ""
 
 msgctxt "GameMenu,Graphics_AntiAliasingQuality"
 msgid ""
-msgstr ""
+msgstr "ANTI-ALIASING KVALITET"
 
 msgctxt "GameMenu,Graphics_CloudQuality"
 msgid ""
@@ -11642,15 +11642,15 @@ msgstr ""
 
 msgctxt "GameMenu,Options_AutosaveTriggers_Arriving"
 msgid ""
-msgstr ""
+msgstr "ANKOMME TIL EN NY PLANET"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_CompletingAchievement"
 msgid ""
-msgstr "OPNÅESE AF PRÆSTATION"
+msgstr "OPNÅELSE AF PRÆSTATION"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_CompletingAchievement_Sony"
 msgid ""
-msgstr "OPNÅESE AF PRÆSTATION"
+msgstr "ERHVERVELSE AF TROFÆ"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_CompletingAchievement_Sony_TooltipDescription"
 msgid ""
@@ -11678,7 +11678,7 @@ msgstr "Autogem når en Portalmotor færdiggøres"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_CompletingVaults"
 msgid ""
-msgstr ""
+msgstr "FÆRDIGGØRELSE AF DATABOKS"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_CompletingVaults_TooltipDescription"
 msgid ""
@@ -11694,7 +11694,7 @@ msgstr "Autogem når der skabes en Modhacknøgle"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_EnterShelter"
 msgid ""
-msgstr "GÅ IND I BASE"
+msgstr "AT GÅ IND I BASE"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_EnterShelter_TooltipDescription"
 msgid ""
@@ -11702,7 +11702,7 @@ msgstr "Autogem når spilleren går ind i en Base"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_EnteringSeat"
 msgid ""
-msgstr "INDTAGE SÆDE"
+msgstr "INDTAGELSE SÆDE"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_EnteringSeat_TooltipDescription"
 msgid ""
@@ -11710,7 +11710,7 @@ msgstr "Autogem når spilleren sætter sig ind i et fartøj"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_FinalEncounter"
 msgid ""
-msgstr "GENNEMFØRRELSE AF AFSLUTTENDE MISSION"
+msgstr "FÆRDIGGØRELSE AF AFSLUTTENDE MISSION"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_FinalEncounter_TooltipDescription"
 msgid ""
@@ -11718,7 +11718,7 @@ msgstr "Autogem når den sidste Glitchwalkers-mission gennemføres"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_PrintMegastructure"
 msgid ""
-msgstr "PRINTER ET MEGABYGNINGSNIVEAU"
+msgstr "PRINTNING ET MEGABYGNINGSNIVEAU"
 
 msgctxt "GameMenu,Options_AutosaveTriggers_PrintMegastructure_TooltipDescription"
 msgid ""
@@ -11737,7 +11737,7 @@ msgstr ""
 
 msgctxt "GameMenu,Options_SaveHistoryLimit"
 msgid ""
-msgstr ""
+msgstr "AUTOGEM HISTORIKBEGRÆNSNING"
 
 msgctxt "GameMenu,Options_SaveHistoryLimit_TooltipDescription"
 msgid ""
@@ -11777,14 +11777,17 @@ msgstr "TILFØJ SERVER"
 msgctxt "GameMenu,Popout_AreYouSureCreativeMode_Title"
 msgid ""
 msgstr ""
+"ER DU SIKKER? NÅR DU STARTER KREATIV TILSTAND VIL FØLGENDE DEAKTIVERES FOR GEMMEN: FREMGANG FOR {0}, MISSIONER, BEGIVENHEDER.\n"
+"\n"
+"DETTE KAN IKKE OMGØRES."
 
 msgctxt "GameMenu,Popout_AreYouSure_MultiplayerModeChange_Client"
 msgid ""
-msgstr ""
+msgstr "ER DU SIKKER? DU AFKOBLES FRA DET NUVÆRENDE SPIL NÅR TILSTANDEN SKIFTES."
 
 msgctxt "GameMenu,Popout_AreYouSure_MultiplayerModeChange_Host"
 msgid ""
-msgstr ""
+msgstr "ER DU SIKKER? ALLE FORBUNDNE SPILLERE AFKOBLES FRA DET NUVÆRENDE SPIL NÅR TILSTANDEN SKIFTES."
 
 msgctxt "GameMenu,Popout_AreYouSure_QuitInOrbit"
 msgid ""
@@ -11817,6 +11820,8 @@ msgstr "< INDTAST SERVERNAVN >"
 msgctxt "GameMenu,Popout_KeybindingReset_Warning"
 msgid ""
 msgstr ""
+"ER DU SIKKER? \n"
+"DE NUVÆRENDE BINDINGER VIL GÅ TABT."
 
 msgctxt "GameMenu,Popout_NewGame_Title"
 msgid ""
@@ -11925,7 +11930,7 @@ msgstr "LYD"
 
 msgctxt "GameMenu,Section_AutosaveTriggers"
 msgid ""
-msgstr ""
+msgstr "AUTOGEM UDLØSERE"
 
 msgctxt "GameMenu,Section_AutosaveTriggers_ExpandConfirmation"
 msgid ""
@@ -12137,11 +12142,11 @@ msgstr "< INDTAST NYT NAVN >"
 
 msgctxt "GameMenu,Submenu_Astropedia"
 msgid ""
-msgstr ""
+msgstr "ASTROPÆDI"
 
 msgctxt "GameMenu,Submenu_AutosaveOptions"
 msgid ""
-msgstr ""
+msgstr "INDSTILLINGER FOR AUTOGEM"
 
 msgctxt "GameMenu,Submenu_Co-Op"
 msgid ""
