@@ -1521,7 +1521,7 @@ msgstr "Animationsfejlsøgning"
 
 msgctxt ",717FAA7D4B7190D3112D7F9B5CE6D887"
 msgid ""
-msgstr "Ambient Wind Override"
+msgstr "Vindtilpasning"
 
 msgctxt ",721144AC4A8425F472FA639BA3B4FA06"
 msgid ""
@@ -5105,7 +5105,7 @@ msgstr "Efterårsbegivenhed Slutter "
 
 msgctxt "AstroUI,MOTD_LTE_general"
 msgid ""
-msgstr "Meld Dig Til Denne Tidsbegrænsede Begivenhed"
+msgstr "Meld Dig Til Denne Tidsbegrænsede Begivenhed!"
 
 msgctxt "AstroUI,MOTD_LTE_general2"
 msgid ""
@@ -7739,7 +7739,7 @@ msgstr ""
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009f_Objective1"
 msgid ""
-msgstr "Hold \"læs\" på mit første værktøjstip"
+msgstr "Hold \"læs\" på mit første værktøjstip "
 
 msgctxt "Chronos,Chronos_MissionData_Chronos009f_Title"
 msgid ""
@@ -14219,7 +14219,7 @@ msgstr ""
 
 msgctxt "Items,Name_AllCaps_GatewayKey"
 msgid ""
-msgstr ""
+msgstr "GEOMETRISK TRIPTYKON"
 
 msgctxt "Items,Name_AllCaps_GeneratorSmall"
 msgid ""
@@ -14791,7 +14791,7 @@ msgstr ""
 
 msgctxt "Items,Name_GatewayKey"
 msgid ""
-msgstr ""
+msgstr "Geometrisk Triptykon"
 
 msgctxt "Items,Name_GeneratorSmall"
 msgid ""
@@ -15303,19 +15303,19 @@ msgstr ""
 
 msgctxt "Items,Subtitle_Gamepiece_King01"
 msgid ""
-msgstr ""
+msgstr "KONGE TYPE 01"
 
 msgctxt "Items,Subtitle_Gamepiece_King02"
 msgid ""
-msgstr ""
+msgstr "KONGE TYPE 02"
 
 msgctxt "Items,Subtitle_Gamepiece_Knight01"
 msgid ""
-msgstr ""
+msgstr "SPRINGER TYPE 01"
 
 msgctxt "Items,Subtitle_Gamepiece_Knight02"
 msgid ""
-msgstr ""
+msgstr "SPRINGER TYPE 02"
 
 msgctxt "Items,Subtitle_Gamepiece_Pawn01"
 msgid ""
@@ -16420,7 +16420,7 @@ msgstr ""
 
 msgctxt "MissionStringsU32_Expansion,Mission_Hack010b_Objective1"
 msgid ""
-msgstr ""
+msgstr "Find en Databoks"
 
 msgctxt "MissionStringsU32_Expansion,Mission_Hack010b_Objective2"
 msgid ""
@@ -16528,7 +16528,7 @@ msgstr ""
 
 msgctxt "MissionStringsU32_Expansion,Mission_Hack015_Name"
 msgid ""
-msgstr ""
+msgstr "Data Kompromitteret"
 
 msgctxt "MissionStringsU32_Expansion,Mission_Hack016_Description"
 msgid ""
@@ -16564,7 +16564,7 @@ msgstr ""
 
 msgctxt "MissionStringsU32_Expansion,Mission_Hack018_Name"
 msgid ""
-msgstr ""
+msgstr "Orkanens Øje"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.1.1.1.1.1._Description"
 msgid ""
@@ -16572,7 +16572,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.1.1.1.1.1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Print en RTG "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.1.1.1.1.1._Title"
 msgid ""
@@ -16624,7 +16624,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.1._Title"
 msgid ""
-msgstr ""
+msgstr "Lav Energi "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Description"
 msgid ""
@@ -16632,31 +16632,31 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Sylva"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective2"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Desolo"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective3"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Calidor"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective4"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Vesania"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective5"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Novus"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective6"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Glacio"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Objective7"
 msgid ""
-msgstr ""
+msgstr "Placer en Base eller Landingsplads på Atrox"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1.1._Title"
 msgid ""
@@ -16668,11 +16668,11 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Placér en Base på en anden planet "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1._Objective2"
 msgid ""
-msgstr ""
+msgstr "Placér en Landingsplads på en anden planet"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.1.1._Title"
 msgid ""
@@ -16744,7 +16744,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.2.1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Print et Kemilaboratorie "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.2.1._Objective2"
 msgid ""
@@ -16796,7 +16796,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.3._Description"
 msgid ""
-msgstr ""
+msgstr "Traktorer og vogne er nyttige til at fragte genstande og ressourcer"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.3._Objective1"
 msgid ""
@@ -16836,7 +16836,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.1.1._Description"
 msgid ""
-msgstr ""
+msgstr "Forbered dig på enhver situation"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.1.1._Objective1"
 msgid ""
@@ -16856,7 +16856,7 @@ msgstr "Lås op for Dynamit"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.1.1._Title"
 msgid ""
-msgstr ""
+msgstr "Avanceret Udforskningsudstyr"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.1._Description"
 msgid ""
@@ -16924,7 +16924,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.4.1.1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Print en Udvinder "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.4.1.1._Objective2"
 msgid ""
@@ -16932,7 +16932,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.4.1.1._Title"
 msgid ""
-msgstr ""
+msgstr "Blotlagt "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.4.1._Description"
 msgid ""
@@ -17064,11 +17064,11 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1._Title"
 msgid ""
-msgstr ""
+msgstr "Planetfald!"
 
 msgctxt "Missions,Missions_MissionData_2.1.1.1.1.1._Description"
 msgid ""
-msgstr ""
+msgstr "Placér den Geometrisk Triptykon fra hver planet den Uidentificerede Satellit "
 
 msgctxt "Missions,Missions_MissionData_2.1.1.1.1.1._Objective1"
 msgid ""
@@ -17080,7 +17080,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_2.1.1.1.1._Description"
 msgid ""
-msgstr ""
+msgstr "Besøg den Uidentificerede Satellit der er dukket op i solsystemet"
 
 msgctxt "Missions,Missions_MissionData_2.1.1.1.1._Objective1"
 msgid ""
@@ -17404,15 +17404,15 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_VehicleGlobe1._Description"
 msgid ""
-msgstr ""
+msgstr "Uventet eksperimentel traverseringsenhed identificeret"
 
 msgctxt "Missions,Missions_MissionData_VehicleGlobe1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Nå makshastighed i en Gravitationskugle"
 
 msgctxt "Missions,Missions_MissionData_VehicleGlobe1._Title"
 msgid ""
-msgstr ""
+msgstr "Udrulning"
 
 msgctxt "Missions,Missions_MissionItem_DataCache._Description"
 msgid ""
@@ -17549,7 +17549,7 @@ msgstr "GENSTANDEN VIL BLIVE OVERFØRT TIL DENNE LANDINGSPLADS"
 
 msgctxt "Missions,Missions_UI_RecallPrompt"
 msgid ""
-msgstr ""
+msgstr "TILBAGEKALD GENSTAND?"
 
 msgctxt "Missions,Missions_UI_Reward_EntryBytesType"
 msgid ""
@@ -17613,31 +17613,31 @@ msgstr "Missionslog"
 
 msgctxt "ModiferTypeStrings,BiomeWeight"
 msgid ""
-msgstr ""
+msgstr "Biomvægtning"
 
 msgctxt "ModiferTypeStrings,Chess"
 msgid ""
-msgstr ""
+msgstr "Skak"
 
 msgctxt "ModiferTypeStrings,Halloween"
 msgid ""
-msgstr ""
+msgstr "Halloween"
 
 msgctxt "ModiferTypeStrings,Harvestables"
 msgid ""
-msgstr ""
+msgstr "Høstede ressourcer"
 
 msgctxt "ModiferTypeStrings,Hazards"
 msgid ""
-msgstr ""
+msgstr "Farer"
 
 msgctxt "ModiferTypeStrings,Holiday"
 msgid ""
-msgstr ""
+msgstr "Feriedag"
 
 msgctxt "ModiferTypeStrings,POIs"
 msgid ""
-msgstr ""
+msgstr "Interessepunkter"
 
 msgctxt "ModiferTypeStrings,Props"
 msgid ""
@@ -17841,11 +17841,11 @@ msgstr "FORSKINGSMODUL"
 
 msgctxt "NewsPosts,Name_Small_Power_Items"
 msgid ""
-msgstr ""
+msgstr "Små Strømgenstande"
 
 msgctxt "NewsPosts,Name_Tether_Toppers"
 msgid ""
-msgstr ""
+msgstr "Iltlinetopper"
 
 msgctxt "NewsPosts,News_Event_Availability"
 msgid ""
@@ -17853,7 +17853,7 @@ msgstr "Denne begivenhed vil være tilgængelig fra"
 
 msgctxt "NewsPosts,News_Event_CustomGameConfig"
 msgid ""
-msgstr ""
+msgstr "Brug Tilpasset spil [#00000] for at starte din rejse på planeten Glacio!"
 
 msgctxt "NewsPosts,News_Event_LTE_previous_years"
 msgid ""
@@ -17868,11 +17868,11 @@ msgstr ""
 
 msgctxt "NewsPosts,News_Event_WinterLTE_Copy2"
 msgid ""
-msgstr ""
+msgstr "EXO Dynamik leverer nyttige genstande og ressourcer for at give din indsats et boost. Tilfældige gentagne belønninger er tilgængelige efter at du har gennemført hovedbegivenheden inklusive:"
 
 msgctxt "NewsPosts,News_Event_WinterLTE_Copy3"
 msgid ""
-msgstr ""
+msgstr "Flerfarvede lys vender tilbage for at pynte de modige Astroneers iltliner! Brug den til pynt, til at støtte dine bygningsprojekter eller nyd blot deres muntre glød."
 
 msgctxt "NewsPosts,News_Event_WinterLTE_FoundonGlacio"
 msgid ""
@@ -17884,11 +17884,11 @@ msgstr "(Fremstilles af Lille Printer)"
 
 msgctxt "NewsPosts,News_Event_WinterLTE_Title_Points"
 msgid ""
-msgstr ""
+msgstr "Pakket legetøj har forskellig værdi når det afsendes: "
 
 msgctxt "NewsPosts,News_Event_WinterLTE_Title_rewards"
 msgid ""
-msgstr ""
+msgstr "EXO Dynamic belønner modtagede pakker med: "
 
 msgctxt "PSActivities,Awakening_Description"
 msgid ""
@@ -17956,11 +17956,11 @@ msgstr "Scanning efter Rumsonder"
 
 msgctxt "PlanetModifierStringNames,AmbientWindRate"
 msgid ""
-msgstr ""
+msgstr "Vindstyrke"
 
 msgctxt "PlanetModifierStringNames,Apollo"
 msgid ""
-msgstr ""
+msgstr "APOLLO"
 
 msgctxt "PlanetModifierStringNames,Gravity"
 msgid ""
@@ -24609,7 +24609,7 @@ msgstr ""
 
 msgctxt "U36_LogData,LogData_TitleResearchFiles3"
 msgid ""
-msgstr "Nyt Liv og Gamle Drømme"
+msgstr "Nyt Liv og Gamle Drømme "
 
 msgctxt "U36_LogData,LogData_TitleResearchFiles4"
 msgid ""
@@ -26089,7 +26089,7 @@ msgstr ""
 
 msgctxt "Vehicles,Description_Trailer"
 msgid ""
-msgstr "Bruge smed Traktorer og rumbiler. Kan kombineres med opbevaringsmoduler for at forøge antallet af pladser."
+msgstr "Bruges med Traktorer og rumbiler. Kan kombineres med opbevaringsmoduler for at forøge antallet af pladser."
 
 msgctxt "Vehicles,Description_VTOL"
 msgid ""
