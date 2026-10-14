@@ -98,6 +98,7 @@ Recreation: Afslapning
 Refine: Udvind / Forædl
 Refined Resource: Forædlet Ressource
 Refinery: Brintudvinder
+Recover/Retrieve: Bjærg
 Research Catalog: Forskningskatalog
 Research Chamber: Undersøgelsesmaskine
 Research Sample: Forskningsprøve

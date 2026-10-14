@@ -573,10 +573,6 @@ msgctxt ",25B1EDF04ABC179FFDD6D5B3D8F6EEEE"
 msgid ""
 msgstr "Smældere"
 
-msgctxt ",2603055343A3FC1C7CBAD0B50CEA7659"
-msgid ""
-msgstr "Grafik"
-
 msgctxt ",262D4D8C423EE54DFE88028E0DA95102"
 msgid ""
 msgstr "Titel"
@@ -1495,10 +1491,6 @@ msgctxt ",70475CEC44D214DF187F55921F8410C8"
 msgid ""
 msgstr "Trailer_Exotic_BuddyJump_Shot01_Take02"
 
-msgctxt ",7047A7EB4D3031BAC436F79C08369013"
-msgid ""
-msgstr "Gamepad"
-
 msgctxt ",7083BAF642A94F1623C4BF964B6BDAB2"
 msgid ""
 msgstr ""
@@ -1572,10 +1564,6 @@ msgstr "2"
 msgctxt ",75BA99EB4E60C03296886884C8374F54"
 msgid ""
 msgstr "Test2"
-
-msgctxt ",75CABEB8499D9EF9C02F7AAF4D77DCCC"
-msgid ""
-msgstr "Lyd"
 
 msgctxt ",75D05F784D3E765DBBC11DBFCBC6E2B4"
 msgid ""
@@ -2015,10 +2003,6 @@ msgctxt ",942190264C0396553249D99F1869D9BF"
 msgid ""
 msgstr "[INI PROT FSE:] TECNOLOGÍA DE AUTOMATIZACIÓN DESPLEGADA PARA REABASTECIMIENTO. COHETE DESPLEGADO PARA TRANSFERENCIA/RECOMPENSA"
 
-msgctxt ",945680CA4C07D2DBC5DF56AA4670E0CB"
-msgid ""
-msgstr "FEJL: INGEN GEM FUNDET PÅ DEN LOKALE PS5™ KONSOL"
-
 msgctxt ",9479FCA84CE4888901A8E98A61F30A98"
 msgid ""
 msgstr "Støvsky Tæt"
@@ -2192,10 +2176,6 @@ msgctxt ",A17C87704BE2E3D0988606AB85C971AC"
 msgid ""
 msgstr "種を介したアトロックス植物からバイオ燃料を精製：カルドランジア。転送/報酬のために配備されたロケット。"
 
-msgctxt ",A1C0E89B40C630F587AADC9CBE726292"
-msgid ""
-msgstr "Eksperimental"
-
 msgctxt ",A27B85D04628F60D64EE07AC9404A0C7"
 msgid ""
 msgstr "Græskar"
@@ -2219,10 +2199,6 @@ msgstr "VÆRFTET laver FARTØJER og DELE. "
 msgctxt ",A36830FD4F4CAF699D5D3BAEE08FA298"
 msgid ""
 msgstr "VELKOMMEN"
-
-msgctxt ",A4CA67C34234458A2BF28D97E2546C9D"
-msgid ""
-msgstr "KeyboardMus"
 
 msgctxt ",A51CF2034E3319398C37698218DDDC4E"
 msgid ""
@@ -3178,10 +3154,6 @@ msgstr "Print {itemName}"
 msgctxt ",EB0B4A7C4C93E17C861F45BA6F8E3231"
 msgid ""
 msgstr "Støvsky"
-
-msgctxt ",EB2D2FE8483D470116126F87225D4808"
-msgid ""
-msgstr "Generelt"
 
 msgctxt ",EB2DF0964E3E43931E2AAF8E2C4CD3C9"
 msgid ""
@@ -4979,6 +4951,14 @@ msgctxt "Astro.Interactions.UseContext,Use"
 msgid ""
 msgstr "BRUG"
 
+msgctxt "Astro.Interactions.UseContext,View Display Case Data"
+msgid ""
+msgstr ""
+
+msgctxt "Astro.Interactions.UseContext,View Perk Data"
+msgid ""
+msgstr ""
+
 msgctxt "AstroDebug,686715BE451B96318C83648291C2D4F9"
 msgid ""
 msgstr "5 meter"
@@ -5202,6 +5182,10 @@ msgstr "KVÆLNINGSFARE"
 msgctxt "AstroUI,Notification_Unlocked_Prefix"
 msgid ""
 msgstr "OPLÅST: "
+
+msgctxt "AstroUI,Prompt_NintendoeShop"
+msgid ""
+msgstr ""
 
 msgctxt "AstroUI,RedeemCode_AlreadyUsed"
 msgid ""
@@ -11288,6 +11272,10 @@ msgctxt "GameMenu,Error_Kicked_LacksMTEntitlement"
 msgid ""
 msgstr "DU ER BLEVET FJERNET FRA MULTIPLAYER-SESSIONEN FORDI DU IKKE EJER MEGATECH-DLC'EN"
 
+msgctxt "GameMenu,Error_PS5_NoPS4SaveDataForImport"
+msgid ""
+msgstr ""
+
 msgctxt "GameMenu,ExperimentalOption_Confirmation"
 msgid ""
 msgstr "ER DU SIKKER PÅ AT DU ØNSKER AT SLETTE OBJEKTER VED INDLÆSNINGS MED DENNE INDSTILLING? DET FORHINDRER NOGLE TYPER AF OBJEKTER I AT INDLÆSES OG KAN HAVE INDFLYDELSE PÅ DIN SPILOPLEVELSE."
@@ -11875,6 +11863,10 @@ msgstr ""
 "WE ANBEFALER AT SPILLE LÆRINGSMODULET \n"
 "FØR DU STARTER ET NYT SPIL. \n"
 "ØNSKER DU AT STARTE LÆRINGSMODUL?"
+
+msgctxt "GameMenu,Popout_UnableToAccessNintendoEShopWhileLocal"
+msgid ""
+msgstr ""
 
 msgctxt "GameMenu,Popout_UnableToAccessWhileLocal"
 msgid ""
@@ -16740,7 +16732,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.2.1._Description"
 msgid ""
-msgstr ""
+msgstr "Brug Kemilaboratoriet til at blandne nye materialer "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.2.1._Objective1"
 msgid ""
@@ -16776,7 +16768,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.3.1.1._Objective2"
 msgid ""
-msgstr ""
+msgstr "Brug en Handelsplatform til at Anskaffe Ressourcer"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.2.3.1.1._Title"
 msgid ""
@@ -16832,7 +16824,7 @@ msgstr "Lås op forLås op for 100 Arbejdstegninger i Kataloget"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.1.1.1._Title"
 msgid ""
-msgstr ""
+msgstr "Oplåste Muligheder "
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.1.1._Description"
 msgid ""
@@ -16896,7 +16888,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.3._Description"
 msgid ""
-msgstr ""
+msgstr "Brug dit Kompas til at finde et EXO Lager og ødelægge det med Dynamit"
 
 msgctxt "Missions,Missions_MissionData_1.1.1.1.3.3._Objective1"
 msgid ""
@@ -16984,7 +16976,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1._Objective1"
 msgid ""
-msgstr ""
+msgstr "Udpak Iltudvinder"
 
 msgctxt "Missions,Missions_MissionData_1.1.1._Objective2"
 msgid ""
@@ -17012,7 +17004,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1b._Description"
 msgid ""
-msgstr ""
+msgstr "Brug Terrænværktøjet til at indsamle ressourcer mens du graver"
 
 msgctxt "Missions,Missions_MissionData_1.1.1b._Objective1"
 msgid ""
@@ -17040,15 +17032,15 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_1.1.1d._Description"
 msgid ""
-msgstr ""
+msgstr "Opgradér for at grave dybere, hurtigere og bedre "
 
 msgctxt "Missions,Missions_MissionData_1.1.1d._Objective1"
 msgid ""
-msgstr "Lås op for, Print og tilslut Forstærkningsmodifikation til Terrænværktøjet"
+msgstr "Lås op for, Print og Kobl Forstærkningsmodifikation til Terrænværktøjet"
 
 msgctxt "Missions,Missions_MissionData_1.1.1d._Objective2"
 msgid ""
-msgstr ""
+msgstr "Lås op for, Print og Kobl Boremodifikation til Terrænværktøjet"
 
 msgctxt "Missions,Missions_MissionData_1.1.1d._Title"
 msgid ""
@@ -17212,7 +17204,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_Vehicle1._Description"
 msgid ""
-msgstr ""
+msgstr "Bjærg data fra ødelagt EXO køretøjsprotype - Kodenavn: HVR // Kompasnavigeringspunkt tilføjet"
 
 msgctxt "Missions,Missions_MissionData_Vehicle1._Objective1"
 msgid ""
@@ -17220,19 +17212,19 @@ msgstr "Find Køretøjsdatalogger på Desolo"
 
 msgctxt "Missions,Missions_MissionData_Vehicle1._Objective2"
 msgid ""
-msgstr ""
+msgstr "Spræng Datalogger"
 
 msgctxt "Missions,Missions_MissionData_Vehicle1._Objective3"
 msgid ""
-msgstr ""
+msgstr "Anskaf en EXO-Chip"
 
 msgctxt "Missions,Missions_MissionData_Vehicle1._Title"
 msgid ""
-msgstr ""
+msgstr "Bjærgning af Prototype"
 
 msgctxt "Missions,Missions_MissionData_Vehicle10._Description"
 msgid ""
-msgstr ""
+msgstr "Afsend kompileret data for at få en ny arbejdstegning"
 
 msgctxt "Missions,Missions_MissionData_Vehicle10._Objective1"
 msgid ""
@@ -17240,7 +17232,7 @@ msgstr "Aktivér MAT på Vesania"
 
 msgctxt "Missions,Missions_MissionData_Vehicle10._Title"
 msgid ""
-msgstr ""
+msgstr "Færdigt Produkt"
 
 msgctxt "Missions,Missions_MissionData_Vehicle2._Description"
 msgid ""
@@ -17292,7 +17284,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_MissionData_Vehicle4._Description"
 msgid ""
-msgstr ""
+msgstr "Afsend kompileret data for at få en ny arbejdstegning"
 
 msgctxt "Missions,Missions_MissionData_Vehicle4._Objective1"
 msgid ""
@@ -17300,11 +17292,11 @@ msgstr "Aktivér MAT på Desolo"
 
 msgctxt "Missions,Missions_MissionData_Vehicle4._Title"
 msgid ""
-msgstr ""
+msgstr "Opstart"
 
 msgctxt "Missions,Missions_MissionData_Vehicle5._Description"
 msgid ""
-msgstr ""
+msgstr "Bjærg data fra ødelagt EXO køretøjsprotype - Kodenavn: VERT // Kompasnavigeringspunkt tilføjet"
 
 msgctxt "Missions,Missions_MissionData_Vehicle5._Objective1"
 msgid ""
@@ -17312,15 +17304,15 @@ msgstr "Find Køretøjsdatalogger på Vesanian"
 
 msgctxt "Missions,Missions_MissionData_Vehicle5._Objective2"
 msgid ""
-msgstr ""
+msgstr "Spræng Datalogger"
 
 msgctxt "Missions,Missions_MissionData_Vehicle5._Objective3"
 msgid ""
-msgstr ""
+msgstr "Anskaf en EXO-Chip"
 
 msgctxt "Missions,Missions_MissionData_Vehicle5._Title"
 msgid ""
-msgstr ""
+msgstr "Vertikal Tænkning"
 
 msgctxt "Missions,Missions_MissionData_Vehicle6._Description"
 msgid ""
@@ -17541,7 +17533,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_UI_NotificationObjUpdated"
 msgid ""
-msgstr ""
+msgstr "Opdateret"
 
 msgctxt "Missions,Missions_UI_RecallNotification"
 msgid ""
@@ -17577,7 +17569,7 @@ msgstr ""
 
 msgctxt "Missions,Missions_UI_Reward_EntryUnlockSchematicType"
 msgid ""
-msgstr ""
+msgstr "Arbejdstegning"
 
 msgctxt "Missions,Missions_UI_Reward_StatusCollectAtLandingPad"
 msgid ""
@@ -22797,6 +22789,11 @@ msgstr ""
 msgctxt "SummerEvent_2024,Description_Summer_Mission"
 msgid ""
 msgstr ""
+"EXO Dynamik anmoder om hjælp til at indsamle værdigfulde ressourcer til den Automatiserede Masse-Produktions-Protokol.\n"
+"\n"
+"Brug EXO Anmodningsplatformen til at se hvilke ressourcer du kan indsende for at modtage point og belønninger!\n"
+"\n"
+"//KØRSELSFEJL// Fejltilstand: Ressourceanomali Detekteret. Fejl Arbejdstegningsdatabaser for Kemilaboratorie og Lille Printer."
 
 msgctxt "SummerEvent_2024,Name_Summer_Lore1"
 msgid ""
@@ -24615,11 +24612,19 @@ msgctxt "U36_LogData,LogData_TitleResearchFiles4"
 msgid ""
 msgstr ""
 
+msgctxt "U36_LogisticsComplex,Item_Description_IntegratedLargeHydrazineCanister"
+msgid ""
+msgstr ""
+
 msgctxt "U36_LogisticsComplex,Item_Description_IntermodalTerminal"
 msgid ""
 msgstr ""
 
 msgctxt "U36_LogisticsComplex,Item_Name_AllCaps_IntermodalTerminal"
+msgid ""
+msgstr ""
+
+msgctxt "U36_LogisticsComplex,Item_Name_IntegratedLargeHydrazineCanister"
 msgid ""
 msgstr ""
 
@@ -25079,9 +25084,25 @@ msgctxt "U36_Museum,Item_Description_ByteDonationStation"
 msgid ""
 msgstr ""
 
+msgctxt "U36_Museum,Item_Description_CombinedPerkStrength"
+msgid ""
+msgstr ""
+
+msgctxt "U36_Museum,Item_Description_ContributingCollections"
+msgid ""
+msgstr ""
+
 msgctxt "U36_Museum,Item_Description_DisplayCase"
 msgid ""
 msgstr "Placér på Montreplatform og fyld med passende udstillingsgenstande for at få adgang til Montreplatformens belønning."
+
+msgctxt "U36_Museum,Item_Description_DisplayCaseInfo"
+msgid ""
+msgstr ""
+
+msgctxt "U36_Museum,Item_Description_DisplayCasePerkData"
+msgid ""
+msgstr ""
 
 msgctxt "U36_Museum,Item_Description_DisplayCasePlatform"
 msgid ""
@@ -25223,7 +25244,19 @@ msgctxt "U36_Museum,Item_Description_Museum"
 msgid ""
 msgstr ""
 
+msgctxt "U36_Museum,Item_Description_MuseumPerkData"
+msgid ""
+msgstr ""
+
+msgctxt "U36_Museum,Item_Description_PerkStrengthOutput"
+msgid ""
+msgstr ""
+
 msgctxt "U36_Museum,Item_Description_PowerDonationStation"
+msgid ""
+msgstr ""
+
+msgctxt "U36_Museum,Item_Description_PowerLevel"
 msgid ""
 msgstr ""
 
